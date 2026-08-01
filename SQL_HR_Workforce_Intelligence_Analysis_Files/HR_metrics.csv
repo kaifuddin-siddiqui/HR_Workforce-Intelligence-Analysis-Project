@@ -1,0 +1,501 @@
+"employee_id","dept_id","role_id","band","salary_annual_inr","performance","years_at_company","attrition","attrition_date","attrition_reason","promotion","training_count","training_hours","job_satisfaction","work_life_balance","overtime_hours_monthly","working_years","attrition_check"
+"EMP0026","D04","R14","E1","361572.00",5,"2 years 10 mons 27 days","No",NULL,NULL,"No",2,14,3,3,15,"2",0
+"EMP0027","D07","R18","E2","897883.00",3,"2 years 8 mons 10 days","No",NULL,NULL,"No",0,0,5,5,14,"2",0
+"EMP0012","D01","R03","E3","1728406.00",4,"9 years 3 mons 3 days","No",NULL,NULL,"No",1,5,4,3,6,"9",0
+"EMP0028","D06","R17","E1","350572.00",2,"7 years 9 mons 15 days","No",NULL,NULL,"No",3,30,3,2,5,"7",0
+"EMP0029","D02","R09","E1","525886.00",1,"5 years 7 mons 4 days","No",NULL,NULL,"No",2,14,5,5,12,"5",0
+"EMP0030","D08","R08","E3","1446741.00",2,"4 years 11 mons 12 days","Yes","2021-02-10","Career Growth","No",1,5,4,4,5,"4",1
+"EMP0031","D01","R02","E2","823097.00",3,"7 years 1 mon 24 days","No",NULL,NULL,"No",1,10,2,2,6,"7",0
+"EMP0032","D09","R09","E1","492215.00",3,"9 mons 18 days","No",NULL,NULL,"No",1,8,4,3,11,"0",0
+"EMP0033","D02","R09","E1","466221.00",5,"8 years 9 mons 26 days","No",NULL,NULL,"No",2,18,3,3,10,"8",0
+"EMP0034","D01","R02","E2","959463.00",2,"6 years 1 mon 13 days","Yes","2021-07-03","Relocation","No",2,12,4,4,7,"6",1
+"EMP0035","D10","R06","E2","1008293.00",4,"2 years 8 mons 11 days","No",NULL,NULL,"Yes",2,16,4,4,17,"2",0
+"EMP0036","D10","R06","E2","827282.00",4,"5 years 10 mons 19 days","No",NULL,NULL,"No",1,11,3,4,14,"5",0
+"EMP0037","D05","R16","E2","1015644.00",3,"11 mons 14 days","No",NULL,NULL,"No",4,24,3,4,6,"0",0
+"EMP0038","D05","R16","E2","964799.00",4,"8 years 1 mon 23 days","Yes","2021-11-10","Compensation","No",1,7,3,2,15,"8",1
+"EMP0039","D05","R07","E3","1586194.00",3,"8 years 9 mons 10 days","No",NULL,NULL,"No",2,18,4,4,13,"8",0
+"EMP0040","D01","R03","E3","1281257.00",4,"3 years 9 mons 24 days","No",NULL,NULL,"Yes",1,7,3,2,15,"3",0
+"EMP0041","D05","R06","E2","770408.00",5,"4 years 11 mons 25 days","Yes","2022-03-24","Work Life Balance","No",1,9,2,2,11,"4",1
+"EMP0042","D06","R17","E1","456424.00",5,"3 years 15 days","No",NULL,NULL,"No",1,9,4,5,13,"3",0
+"EMP0014","D08","R06","E2","762237.00",2,"7 years 5 mons","No",NULL,NULL,"No",7,63,3,2,2,"7",0
+"EMP0043","D07","R02","E2","1054429.00",5,"8 years 4 mons 13 days","No",NULL,NULL,"No",1,9,5,4,8,"8",0
+"EMP0044","D05","R16","E2","1178156.00",4,"8 years 10 days","No",NULL,NULL,"Yes",1,8,3,2,5,"8",0
+"EMP0045","D07","R18","E2","666872.00",5,"1 year 3 mons 10 days","No",NULL,NULL,"No",1,10,4,4,5,"1",0
+"EMP0046","D01","R03","E3","2039998.00",2,"8 years 8 mons 17 days","No",NULL,NULL,"No",2,10,3,3,10,"8",0
+"EMP0047","D02","R11","M1","2020584.00",3,"2 years 8 mons 19 days","No",NULL,NULL,"No",3,24,3,3,16,"2",0
+"EMP0048","D01","R01","E1","434463.00",3,"2 years 4 mons 10 days","Yes","2023-04-16","Career Growth","No",3,27,4,4,5,"2",1
+"EMP0049","D03","R12","E1","603717.00",5,"7 years 9 days","No",NULL,NULL,"No",2,22,4,5,9,"7",0
+"EMP0050","D01","R03","E3","1562797.00",4,"4 years 6 mons 8 days","Yes","2022-12-09","Career Growth","No",1,6,4,3,4,"4",1
+"EMP0051","D08","R03","E3","1292165.00",4,"4 mons","No",NULL,NULL,"No",2,18,5,5,10,"0",0
+"EMP0052","D09","R09","E1","538617.00",4,"6 mons 17 days","No",NULL,NULL,"No",4,28,3,2,4,"0",0
+"EMP0053","D07","R18","E2","609170.00",4,"4 years 1 mon 26 days","No",NULL,NULL,"No",2,20,1,1,6,"4",0
+"EMP0054","D03","R12","E1","443904.00",3,"10 mons 1 day","No",NULL,NULL,"No",3,15,3,2,9,"0",0
+"EMP0055","D02","R10","E2","1076620.00",3,"9 years 3 mons 9 days","No",NULL,NULL,"No",3,30,2,1,6,"9",0
+"EMP0056","D09","R09","E1","571292.00",4,"8 years 3 days","No",NULL,NULL,"No",3,33,5,5,14,"8",0
+"EMP0057","D06","R06","E2","1014256.00",4,"4 years 5 mons 22 days","No",NULL,NULL,"No",2,10,4,3,0,"4",0
+"EMP0058","D02","R09","E1","334453.00",4,"3 years 3 mons 15 days","No",NULL,NULL,"Yes",2,16,2,2,10,"3",0
+"EMP0059","D01","R01","E1","477017.00",4,"3 years 5 mons 11 days","Yes","2022-02-16","Compensation","No",0,0,4,4,17,"3",1
+"EMP0060","D08","R20","E4","2851440.00",2,"4 years 7 mons 20 days","No",NULL,NULL,"No",1,7,2,2,12,"4",0
+"EMP0061","D02","R10","E2","903800.00",5,"11 mons 16 days","No",NULL,NULL,"No",1,6,3,3,3,"0",0
+"EMP0062","D03","R12","E1","465909.00",4,"9 years 5 mons 29 days","No",NULL,NULL,"No",2,16,3,4,3,"9",0
+"EMP0063","D08","R03","E3","1129194.00",3,"1 year 18 days","No",NULL,NULL,"No",3,15,4,4,17,"1",0
+"EMP0064","D10","R19","E4","2573620.00",1,"1 year 2 mons 11 days","No",NULL,NULL,"No",2,18,4,5,7,"1",0
+"EMP0065","D04","R14","E1","600433.00",4,"6 years 5 mons 17 days","No",NULL,NULL,"No",2,16,5,5,9,"6",0
+"EMP0066","D06","R17","E1","374578.00",5,"11 mons 24 days","No",NULL,NULL,"No",2,14,4,4,16,"0",0
+"EMP0067","D10","R06","E2","1091759.00",3,"6 years 7 mons 10 days","No",NULL,NULL,"No",2,10,5,5,19,"6",0
+"EMP0068","D07","R18","E2","688241.00",5,"1 year 10 mons 30 days","No",NULL,NULL,"No",3,18,4,3,6,"1",0
+"EMP0069","D07","R18","E2","668772.00",5,"5 years 7 mons 12 days","No",NULL,NULL,"No",0,0,5,5,17,"5",0
+"EMP0070","D03","R12","E1","414008.00",4,"11 mons 9 days","No",NULL,NULL,"No",3,18,4,4,11,"0",0
+"EMP0071","D09","R17","E1","552735.00",5,"1 year 8 mons 12 days","Yes","2023-06-18","Career Growth","No",4,32,1,1,9,"1",1
+"EMP0072","D01","R01","E1","590654.00",4,"1 year 7 mons 5 days","Yes","2024-02-20","Compensation","Yes",1,7,4,3,12,"1",1
+"EMP0073","D01","R02","E2","684277.00",3,"3 mons 6 days","No",NULL,NULL,"No",2,22,5,5,16,"0",0
+"EMP0074","D07","R02","E2","981425.00",4,"1 year 8 mons 26 days","No",NULL,NULL,"No",4,24,2,2,5,"1",0
+"EMP0075","D07","R18","E2","656331.00",4,"4 years 4 mons 2 days","No",NULL,NULL,"No",4,32,4,4,7,"4",0
+"EMP0076","D10","R03","E3","1761961.00",4,"7 years 6 mons 1 day","No",NULL,NULL,"Yes",1,7,4,4,7,"7",0
+"EMP0077","D06","R17","E1","635413.00",3,"9 years 1 mon 8 days","No",NULL,NULL,"No",2,22,5,5,14,"9",0
+"EMP0078","D03","R13","E3","1434764.00",4,"4 years 11 mons 8 days","No",NULL,NULL,"No",1,5,5,5,10,"4",0
+"EMP0079","D09","R10","E2","663079.00",4,"6 years 6 mons 16 days","No",NULL,NULL,"No",3,15,3,4,17,"6",0
+"EMP0080","D10","R07","E3","1101146.00",3,"11 mons 26 days","No",NULL,NULL,"No",2,16,4,4,18,"0",0
+"EMP0081","D08","R20","E4","2345575.00",2,"6 years 4 mons 7 days","No",NULL,NULL,"No",1,6,4,3,11,"6",0
+"EMP0082","D10","R07","E3","1737185.00",4,"6 years 2 mons 3 days","No",NULL,NULL,"No",1,5,2,2,15,"6",0
+"EMP0083","D02","R09","E1","535717.00",5,"6 years 5 mons 17 days","No",NULL,NULL,"No",2,20,2,2,11,"6",0
+"EMP0084","D04","R14","E1","447036.00",4,"4 years 10 mons 23 days","Yes","2022-08-24","Relocation","No",4,44,2,2,9,"4",1
+"EMP0085","D09","R09","E1","487608.00",5,"6 years 11 mons 1 day","No",NULL,NULL,"No",2,16,4,5,11,"6",0
+"EMP0086","D08","R06","E2","780723.00",3,"4 years 2 mons 27 days","No",NULL,NULL,"No",0,0,2,2,10,"4",0
+"EMP0087","D06","R17","E1","406728.00",4,"6 mons 17 days","No",NULL,NULL,"No",4,24,1,1,9,"0",0
+"EMP0088","D01","R02","E2","1089124.00",3,"9 years 2 mons 19 days","No",NULL,NULL,"No",3,33,2,2,3,"9",0
+"EMP0089","D08","R07","E3","1704984.00",4,"4 years 5 mons 19 days","No",NULL,NULL,"No",1,7,1,1,3,"4",0
+"EMP0090","D02","R11","M1","2711624.00",5,"9 mons 23 days","No",NULL,NULL,"No",1,6,4,5,3,"0",0
+"EMP0091","D09","R10","E2","739631.00",3,"4 years 7 mons 9 days","No",NULL,NULL,"No",0,0,4,5,5,"4",0
+"EMP0092","D08","R20","E4","1918980.00",3,"9 years 4 mons 20 days","No",NULL,NULL,"No",2,20,3,4,7,"9",0
+"EMP0093","D06","R17","E1","592588.00",4,"4 years 2 mons 10 days","No",NULL,NULL,"No",1,6,3,4,0,"4",0
+"EMP0094","D01","R01","E1","436407.00",1,"4 years 24 days","No",NULL,NULL,"No",1,8,3,3,15,"4",0
+"EMP0095","D01","R03","E3","1592305.00",4,"1 year 3 mons 22 days","No",NULL,NULL,"No",3,33,4,4,16,"1",0
+"EMP0096","D09","R09","E1","353362.00",4,"6 years 10 mons 13 days","No",NULL,NULL,"No",1,9,3,3,11,"6",0
+"EMP0097","D01","R02","E2","1186937.00",4,"9 years 1 day","Yes","2019-04-11","Career Growth","Yes",2,16,5,5,0,"9",1
+"EMP0098","D01","R04","E4","2901641.00",4,"7 years 7 mons 9 days","No",NULL,NULL,"No",1,5,3,3,10,"7",0
+"EMP0099","D10","R19","E4","2667482.00",2,"7 years 11 mons 1 day","No",NULL,NULL,"No",1,6,4,4,16,"7",0
+"EMP0100","D09","R10","E2","706879.00",3,"4 years 8 mons 22 days","No",NULL,NULL,"No",2,16,5,5,13,"4",0
+"EMP0101","D09","R17","E1","589400.00",4,"1 year 2 mons 15 days","No",NULL,NULL,"No",1,5,3,3,11,"1",0
+"EMP0102","D07","R18","E2","775804.00",3,"6 years 20 days","No",NULL,NULL,"No",1,11,2,2,11,"6",0
+"EMP0103","D01","R01","E1","548199.00",1,"1 year 1 mon 28 days","No",NULL,NULL,"No",2,10,5,5,14,"1",0
+"EMP0104","D03","R13","E3","1584532.00",1,"4 years 2 mons 17 days","No",NULL,NULL,"No",0,0,4,4,11,"4",0
+"EMP0105","D06","R17","E1","451730.00",4,"4 years 8 mons 24 days","No",NULL,NULL,"Yes",0,0,3,3,6,"4",0
+"EMP0106","D05","R07","E3","1541650.00",4,"11 mons 30 days","No",NULL,NULL,"No",1,5,4,4,0,"0",0
+"EMP0107","D01","R02","E2","1189619.00",5,"9 years 2 mons 15 days","No",NULL,NULL,"Yes",2,22,1,1,17,"9",0
+"EMP0108","D05","R16","E2","1134610.00",4,"3 years 5 mons 24 days","No",NULL,NULL,"No",5,40,3,3,6,"3",0
+"EMP0109","D01","R05","M1","4304010.00",4,"4 years 6 mons 6 days","No",NULL,NULL,"No",1,9,3,3,14,"4",0
+"EMP0110","D06","R06","E2","772108.00",1,"1 year 6 mons 23 days","No",NULL,NULL,"No",1,11,4,3,14,"1",0
+"EMP0111","D10","R19","E4","2809094.00",5,"5 years 4 mons 13 days","No",NULL,NULL,"No",0,0,2,1,9,"5",0
+"EMP0112","D02","R10","E2","810143.00",4,"3 years 6 mons 8 days","Yes","2021-08-22","Better Opportunity","No",4,40,4,4,10,"3",1
+"EMP0113","D03","R12","E1","660610.00",3,"5 years 8 mons 29 days","No",NULL,NULL,"No",1,6,4,4,2,"5",0
+"EMP0114","D07","R18","E2","687134.00",5,"6 years 2 mons 23 days","No",NULL,NULL,"No",2,12,3,3,12,"6",0
+"EMP0115","D02","R09","E1","478484.00",3,"6 years 4 mons 11 days","No",NULL,NULL,"No",1,8,3,3,10,"6",0
+"EMP0116","D03","R13","E3","1510882.00",3,"3 years 9 mons 1 day","No",NULL,NULL,"No",2,18,1,1,0,"3",0
+"EMP0117","D05","R16","E2","988804.00",5,"4 years 11 mons 26 days","No",NULL,NULL,"No",3,33,4,4,14,"4",0
+"EMP0118","D06","R17","E1","396009.00",3,"2 years 5 days","No",NULL,NULL,"No",0,0,4,4,8,"2",0
+"EMP0119","D01","R02","E2","928050.00",4,"6 years 24 days","No",NULL,NULL,"No",1,8,5,5,11,"6",0
+"EMP0120","D03","R12","E1","604713.00",3,"9 years 2 mons 24 days","No",NULL,NULL,"No",5,25,5,5,13,"9",0
+"EMP0121","D03","R06","E2","1019626.00",4,"1 year 4 mons 5 days","No",NULL,NULL,"No",3,21,4,5,11,"1",0
+"EMP0122","D09","R17","E1","589839.00",4,"6 years 11 mons 3 days","No",NULL,NULL,"No",1,10,1,1,13,"6",0
+"EMP0123","D07","R18","E2","903547.00",5,"3 years 11 mons 9 days","No",NULL,NULL,"No",3,15,4,4,8,"3",0
+"EMP0124","D02","R09","E1","391461.00",2,"7 years 1 mon 18 days","No",NULL,NULL,"No",1,9,3,2,16,"7",0
+"EMP0125","D02","R09","E1","388806.00",2,"1 year 6 mons 9 days","No",NULL,NULL,"No",6,48,4,4,8,"1",0
+"EMP0126","D07","R18","E2","661036.00",4,"4 years 11 mons 16 days","No",NULL,NULL,"Yes",2,16,3,3,8,"4",0
+"EMP0127","D07","R18","E2","694208.00",5,"3 years 9 mons 17 days","No",NULL,NULL,"No",2,16,3,4,12,"3",0
+"EMP0128","D10","R19","E4","2672982.00",2,"4 years 10 mons 20 days","Yes","2021-08-02","Work Life Balance","No",2,20,1,1,16,"4",1
+"EMP0129","D01","R01","E1","541893.00",3,"1 year 11 mons 22 days","No",NULL,NULL,"No",2,16,1,1,6,"1",0
+"EMP0130","D07","R18","E2","850140.00",4,"4 years 6 mons 13 days","Yes","2022-08-06","Career Growth","Yes",3,24,5,5,13,"4",1
+"EMP0131","D01","R06","E2","964269.00",4,"6 years 3 mons 29 days","No",NULL,NULL,"No",3,30,4,4,8,"6",0
+"EMP0132","D01","R03","E3","1651255.00",4,"8 years 7 mons 22 days","No",NULL,NULL,"Yes",1,11,4,4,11,"8",0
+"EMP0133","D02","R09","E1","522303.00",4,"4 years 3 mons 29 days","No",NULL,NULL,"No",1,9,1,1,22,"4",0
+"EMP0134","D08","R07","E3","1757020.00",4,"7 years 11 mons 9 days","No",NULL,NULL,"No",3,18,4,4,23,"7",0
+"EMP0135","D07","R18","E2","798308.00",3,"6 years 3 mons 7 days","No",NULL,NULL,"No",4,40,5,4,13,"6",0
+"EMP0136","D03","R13","E3","1942500.00",1,"6 years 5 mons 27 days","No",NULL,NULL,"No",2,22,4,4,7,"6",0
+"EMP0137","D09","R17","E1","560741.00",3,"3 years 10 mons 6 days","No",NULL,NULL,"No",0,0,3,4,11,"3",0
+"EMP0138","D09","R09","E1","523544.00",2,"2 years 9 mons 24 days","Yes","2022-05-06","Compensation","No",4,32,4,3,6,"2",1
+"EMP0139","D04","R15","M1","2024870.00",1,"3 years 5 mons 22 days","No",NULL,NULL,"No",3,15,4,3,10,"3",0
+"EMP0140","D03","R06","E2","1113735.00",3,"4 years 6 mons 15 days","No",NULL,NULL,"No",0,0,3,3,6,"4",0
+"EMP0142","D01","R02","E2","970065.00",4,"1 year 2 days","No",NULL,NULL,"No",2,16,3,3,6,"1",0
+"EMP0143","D01","R02","E2","785351.00",1,"9 years 5 mons 18 days","No",NULL,NULL,"No",2,18,4,4,11,"9",0
+"EMP0144","D02","R11","M1","3116801.00",1,"3 years 5 mons 8 days","Yes","2023-04-15","Compensation","No",5,25,5,5,0,"3",1
+"EMP0145","D03","R12","E1","401500.00",1,"2 mons 28 days","No",NULL,NULL,"No",4,28,3,3,15,"0",0
+"EMP0146","D08","R07","E3","1687664.00",3,"3 years 3 mons 9 days","No",NULL,NULL,"No",3,27,3,4,4,"3",0
+"EMP0147","D01","R01","E1","560567.00",3,"4 years 12 days","No",NULL,NULL,"No",4,36,5,5,17,"4",0
+"EMP0148","D03","R12","E1","730722.00",3,"8 years 5 mons","No",NULL,NULL,"No",4,44,1,1,6,"8",0
+"EMP0149","D02","R10","E2","714215.00",4,"2 years 5 mons 19 days","No",NULL,NULL,"No",3,30,4,3,11,"2",0
+"EMP0141","D09","R09","E1","597242.00",3,"7 years 6 mons 6 days","No",NULL,NULL,"No",1,10,3,3,5,"7",0
+"EMP0150","D02","R09","E1","511925.00",2,"2 years 6 mons 23 days","No",NULL,NULL,"No",2,10,4,5,11,"2",0
+"EMP0151","D04","R14","E1","437210.00",4,"5 years 9 mons 2 days","No",NULL,NULL,"No",1,6,4,4,10,"5",0
+"EMP0152","D06","R17","E1","369127.00",5,"4 years 1 mon 25 days","No",NULL,NULL,"Yes",3,24,4,5,4,"4",0
+"EMP0153","D01","R04","E4","2561103.00",5,"3 years 10 mons 17 days","No",NULL,NULL,"No",2,22,5,5,3,"3",0
+"EMP0154","D06","R17","E1","532304.00",5,"2 years 4 mons 7 days","No",NULL,NULL,"No",7,77,3,2,18,"2",0
+"EMP0155","D02","R09","E1","604523.00",4,"4 years 3 mons 16 days","No",NULL,NULL,"Yes",1,8,5,5,15,"4",0
+"EMP0156","D05","R06","E2","1006233.00",4,"3 years 2 mons 20 days","No",NULL,NULL,"Yes",1,9,3,4,11,"3",0
+"EMP0157","D03","R06","E2","940294.00",4,"9 years 5 mons 3 days","No",NULL,NULL,"No",1,11,2,2,20,"9",0
+"EMP0158","D01","R01","E1","423710.00",3,"7 mons 25 days","No",NULL,NULL,"No",3,33,2,3,9,"0",0
+"EMP0159","D01","R02","E2","932336.00",4,"7 years 2 mons 12 days","No",NULL,NULL,"No",2,10,4,4,18,"7",0
+"EMP0160","D02","R11","M1","2946652.00",5,"3 years 5 mons 30 days","No",NULL,NULL,"No",0,0,5,5,14,"3",0
+"EMP0161","D02","R11","M1","2441627.00",2,"1 year 5 mons 12 days","No",NULL,NULL,"No",3,24,2,2,3,"1",0
+"EMP0162","D07","R18","E2","828327.00",4,"2 mons 15 days","No",NULL,NULL,"No",1,6,4,3,9,"0",0
+"EMP0163","D01","R02","E2","1244514.00",4,"9 years 26 days","No",NULL,NULL,"No",3,30,4,3,23,"9",0
+"EMP0164","D02","R10","E2","885662.00",5,"7 years 4 mons 27 days","No",NULL,NULL,"No",5,30,3,3,7,"7",0
+"EMP0165","D09","R10","E2","699125.00",2,"11 mons 17 days","No",NULL,NULL,"No",0,0,2,3,11,"0",0
+"EMP0010","D04","R14","E1","525388.00",5,"2 years 10 mons 28 days","No",NULL,NULL,"No",3,24,5,5,13,"2",0
+"EMP0166","D07","R18","E2","602130.00",3,"2 years 9 mons 3 days","No",NULL,NULL,"No",2,18,5,4,4,"2",0
+"EMP0167","D06","R17","E1","374247.00",3,"8 years 6 mons 10 days","Yes","2017-04-16","Compensation","No",4,20,2,2,6,"8",1
+"EMP0168","D04","R14","E1","578021.00",3,"6 years 8 mons 29 days","No",NULL,NULL,"No",3,15,4,4,10,"6",0
+"EMP0169","D09","R17","E1","464144.00",3,"10 mons 4 days","Yes","2024-05-25","Work Life Balance","No",2,10,3,3,14,"0",1
+"EMP0170","D04","R14","E1","369817.00",4,"5 years 5 mons 5 days","No",NULL,NULL,"Yes",1,7,5,5,15,"5",0
+"EMP0171","D07","R01","E1","373357.00",2,"5 mons 21 days","No",NULL,NULL,"No",1,7,3,3,4,"0",0
+"EMP0172","D02","R09","E1","603821.00",4,"7 years 2 mons 16 days","No",NULL,NULL,"Yes",3,21,4,4,14,"7",0
+"EMP0173","D06","R17","E1","601560.00",5,"6 years 9 days","No",NULL,NULL,"Yes",6,48,2,2,0,"6",0
+"EMP0174","D08","R20","E4","2294375.00",3,"7 years 5 mons 24 days","No",NULL,NULL,"No",4,36,4,4,2,"7",0
+"EMP0175","D06","R17","E1","446709.00",3,"6 years 10 mons 12 days","No",NULL,NULL,"No",0,0,3,3,14,"6",0
+"EMP0176","D01","R01","E1","426493.00",4,"6 years 17 days","No",NULL,NULL,"Yes",1,11,2,3,4,"6",0
+"EMP0177","D06","R17","E1","599520.00",3,"9 years 5 mons 25 days","No",NULL,NULL,"No",0,0,5,5,6,"9",0
+"EMP0178","D01","R02","E2","993611.00",5,"7 years 4 mons 23 days","No",NULL,NULL,"No",2,20,4,4,10,"7",0
+"EMP0179","D02","R09","E1","434487.00",5,"1 year 11 mons 21 days","No",NULL,NULL,"No",4,20,3,3,9,"1",0
+"EMP0180","D01","R02","E2","914351.00",3,"3 years 8 mons 11 days","No",NULL,NULL,"No",1,8,4,3,0,"3",0
+"EMP0181","D01","R01","E1","476824.00",3,"4 years 22 days","No",NULL,NULL,"No",5,25,5,4,14,"4",0
+"EMP0182","D03","R12","E1","407032.00",5,"3 years 18 days","No",NULL,NULL,"No",6,36,4,4,5,"3",0
+"EMP0183","D06","R17","E1","612998.00",3,"6 years 4 mons 15 days","No",NULL,NULL,"No",3,33,2,2,1,"6",0
+"EMP0184","D01","R01","E1","529742.00",5,"8 years 7 mons 10 days","No",NULL,NULL,"Yes",1,8,4,4,15,"8",0
+"EMP0185","D02","R09","E1","350657.00",4,"2 years 4 mons 14 days","No",NULL,NULL,"No",1,8,5,5,7,"2",0
+"EMP0186","D01","R02","E2","1025601.00",4,"2 years 2 mons 18 days","No",NULL,NULL,"No",2,14,4,4,10,"2",0
+"EMP0187","D01","R04","E4","2286677.00",3,"8 years 1 mon 5 days","Yes","2020-04-07","Compensation","No",0,0,2,2,12,"8",1
+"EMP0188","D10","R06","E2","1044828.00",3,"5 years 8 mons 26 days","No",NULL,NULL,"No",3,24,3,3,1,"5",0
+"EMP0189","D02","R09","E1","482120.00",3,"8 years 8 mons 13 days","No",NULL,NULL,"No",2,12,1,1,12,"8",0
+"EMP0190","D08","R20","E4","2392803.00",4,"10 mons 4 days","No",NULL,NULL,"No",1,6,4,4,18,"0",0
+"EMP0191","D06","R17","E1","393454.00",3,"9 years 3 mons 25 days","No",NULL,NULL,"No",3,21,3,3,6,"9",0
+"EMP0192","D01","R02","E2","750443.00",2,"5 years 21 days","No",NULL,NULL,"No",6,42,3,3,19,"5",0
+"EMP0193","D01","R02","E2","767451.00",2,"2 years 13 days","No",NULL,NULL,"No",3,15,5,4,16,"2",0
+"EMP0194","D10","R07","E3","1524592.00",4,"1 year 4 days","No",NULL,NULL,"No",0,0,4,5,10,"1",0
+"EMP0195","D06","R06","E2","836207.00",1,"4 years 10 mons 5 days","Yes","2022-02-13","Better Opportunity","No",2,14,1,1,1,"4",1
+"EMP0196","D01","R01","E1","491865.00",3,"5 years 7 mons 8 days","No",NULL,NULL,"No",3,27,4,4,11,"5",0
+"EMP0197","D07","R18","E2","867410.00",5,"2 years 8 mons 23 days","No",NULL,NULL,"No",1,5,4,3,5,"2",0
+"EMP0198","D07","R18","E2","784372.00",5,"8 years 4 mons 25 days","Yes","2020-05-15","Compensation","No",1,8,4,4,11,"8",1
+"EMP0199","D02","R09","E1","523601.00",4,"8 years 3 mons 6 days","No",NULL,NULL,"No",6,54,4,5,8,"8",0
+"EMP0200","D07","R18","E2","658861.00",3,"6 years 10 mons 10 days","No",NULL,NULL,"No",3,15,4,3,13,"6",0
+"EMP0201","D01","R02","E2","883183.00",3,"5 years 11 mons 17 days","No",NULL,NULL,"No",3,30,4,4,18,"5",0
+"EMP0202","D04","R14","E1","568421.00",3,"6 mons 9 days","No",NULL,NULL,"No",1,5,4,5,9,"0",0
+"EMP0203","D09","R17","E1","364298.00",3,"3 years 25 days","No",NULL,NULL,"No",2,18,3,3,7,"3",0
+"EMP0204","D01","R02","E2","1055620.00",2,"2 years 2 mons 13 days","No",NULL,NULL,"No",3,15,3,3,13,"2",0
+"EMP0205","D02","R10","E2","927564.00",5,"2 years 3 mons 25 days","No",NULL,NULL,"No",2,10,4,4,7,"2",0
+"EMP0206","D03","R06","E2","886116.00",3,"8 mons 27 days","No",NULL,NULL,"No",3,24,4,4,7,"0",0
+"EMP0207","D08","R20","E4","1963473.00",3,"3 years 5 mons 12 days","Yes","2022-09-13","Work Life Balance","No",1,9,3,3,1,"3",1
+"EMP0208","D09","R09","E1","461152.00",3,"3 years 11 mons 5 days","No",NULL,NULL,"No",4,40,5,4,8,"3",0
+"EMP0209","D01","R02","E2","866057.00",4,"3 years 9 mons 29 days","No",NULL,NULL,"No",2,12,3,3,9,"3",0
+"EMP0210","D01","R02","E2","994252.00",4,"7 years 9 mons 1 day","No",NULL,NULL,"No",2,14,3,3,8,"7",0
+"EMP0211","D10","R03","E3","1691203.00",5,"7 years 8 mons 12 days","No",NULL,NULL,"No",6,36,4,4,12,"7",0
+"EMP0212","D01","R04","E4","2099310.00",4,"8 years 6 mons 8 days","No",NULL,NULL,"No",2,18,3,4,8,"8",0
+"EMP0213","D10","R19","E4","2231492.00",3,"5 years 6 mons 5 days","No",NULL,NULL,"No",2,16,1,1,20,"5",0
+"EMP0215","D01","R02","E2","1139815.00",4,"9 years 8 days","No",NULL,NULL,"No",1,9,3,3,7,"9",0
+"EMP0216","D02","R10","E2","788920.00",5,"9 years 4 mons 4 days","No",NULL,NULL,"Yes",1,5,5,5,0,"9",0
+"EMP0217","D01","R02","E2","1063846.00",3,"3 mons 29 days","No",NULL,NULL,"No",3,33,2,2,4,"0",0
+"EMP0218","D04","R15","M1","1730676.00",4,"8 years 1 mon 14 days","No",NULL,NULL,"No",4,36,3,4,8,"8",0
+"EMP0227","D01","R04","E4","2355425.00",4,"1 year 2 days","No",NULL,NULL,"No",1,5,3,3,5,"1",0
+"EMP0219","D02","R09","E1","354170.00",3,"5 years 8 mons 23 days","No",NULL,NULL,"No",2,14,3,2,15,"5",0
+"EMP0220","D01","R03","E3","1446429.00",2,"1 year 3 mons 19 days","No",NULL,NULL,"No",2,12,4,5,8,"1",0
+"EMP0221","D01","R02","E2","1195365.00",4,"9 years 1 mon 13 days","No",NULL,NULL,"No",3,21,2,2,6,"9",0
+"EMP0222","D05","R06","E2","704781.00",5,"4 years 15 days","No",NULL,NULL,"No",1,6,5,5,6,"4",0
+"EMP0223","D01","R02","E2","852040.00",5,"7 years 29 days","No",NULL,NULL,"Yes",1,8,2,2,11,"7",0
+"EMP0224","D03","R12","E1","576846.00",4,"4 years 10 mons 21 days","No",NULL,NULL,"Yes",1,11,4,5,9,"4",0
+"EMP0225","D01","R03","E3","2032364.00",5,"7 years 8 mons 29 days","No",NULL,NULL,"Yes",2,22,2,2,14,"7",0
+"EMP0226","D07","R18","E2","806211.00",4,"3 years 11 mons 2 days","No",NULL,NULL,"No",3,27,1,1,6,"3",0
+"EMP0228","D03","R13","E3","1871197.00",2,"8 years 7 mons 5 days","No",NULL,NULL,"No",2,14,5,5,15,"8",0
+"EMP0229","D09","R09","E1","380612.00",3,"6 years 2 mons 3 days","No",NULL,NULL,"No",1,5,3,2,16,"6",0
+"EMP0230","D01","R08","E3","2143069.00",3,"5 years 9 mons 9 days","Yes","2023-01-30","Better Opportunity","No",1,10,4,3,5,"5",1
+"EMP0231","D02","R09","E1","578927.00",3,"8 years 5 mons 3 days","No",NULL,NULL,"No",3,15,4,5,3,"8",0
+"EMP0232","D01","R02","E2","1026904.00",3,"4 years 2 mons 13 days","No",NULL,NULL,"No",3,27,2,2,20,"4",0
+"EMP0233","D01","R01","E1","597187.00",3,"7 years 15 days","No",NULL,NULL,"No",2,12,4,4,14,"7",0
+"EMP0234","D01","R01","E1","615528.00",3,"3 years 10 mons 9 days","No",NULL,NULL,"No",1,7,5,4,7,"3",0
+"EMP0011","D09","R17","E1","373510.00",4,"7 years 2 mons 16 days","No",NULL,NULL,"No",3,24,2,2,15,"7",0
+"EMP0235","D05","R07","E3","1146567.00",3,"4 years 6 mons 26 days","Yes","2023-04-20","Better Opportunity","No",1,10,2,2,5,"4",1
+"EMP0236","D01","R02","E2","854271.00",5,"8 years 4 mons 15 days","No",NULL,NULL,"No",3,30,5,5,3,"8",0
+"EMP0237","D01","R05","M1","4178114.00",4,"5 years 11 mons 20 days","No",NULL,NULL,"No",2,12,4,5,10,"5",0
+"EMP0238","D04","R14","E1","566485.00",2,"4 years 9 mons 24 days","Yes","2023-10-17","Career Growth","No",3,30,3,3,8,"4",1
+"EMP0239","D05","R06","E2","987127.00",3,"9 mons 5 days","No",NULL,NULL,"No",3,27,4,5,12,"0",0
+"EMP0240","D01","R01","E1","624094.00",3,"2 years 3 mons 5 days","No",NULL,NULL,"No",1,11,4,4,9,"2",0
+"EMP0242","D10","R07","E3","1531426.00",4,"2 years 10 mons 16 days","No",NULL,NULL,"No",0,0,3,3,10,"2",0
+"EMP0243","D01","R03","E3","1173428.00",3,"1 year 4 mons 3 days","No",NULL,NULL,"No",1,9,2,2,4,"1",0
+"EMP0244","D07","R18","E2","661599.00",4,"4 years 6 mons 12 days","Yes","2022-08-07","Relocation","No",1,8,5,4,20,"4",1
+"EMP0245","D08","R06","E2","656433.00",5,"3 years 4 mons 11 days","No",NULL,NULL,"No",4,32,5,5,4,"3",0
+"EMP0246","D09","R17","E1","398028.00",4,"3 years 6 mons 16 days","No",NULL,NULL,"No",2,14,2,2,5,"3",0
+"EMP0247","D08","R06","E2","945891.00",5,"3 years 27 days","No",NULL,NULL,"Yes",6,30,3,4,3,"3",0
+"EMP0248","D05","R16","E2","1125635.00",5,"9 years 1 mon 16 days","No",NULL,NULL,"No",2,16,5,5,10,"9",0
+"EMP0249","D10","R19","E4","2098754.00",3,"1 year 5 mons","No",NULL,NULL,"No",1,7,3,3,1,"1",0
+"EMP0250","D05","R16","E2","1173354.00",3,"7 years 9 days","No",NULL,NULL,"No",3,21,3,3,0,"7",0
+"EMP0251","D07","R02","E2","1087181.00",3,"3 years 4 mons 11 days","No",NULL,NULL,"No",0,0,3,3,5,"3",0
+"EMP0252","D06","R17","E1","500085.00",5,"4 years 8 mons 21 days","No",NULL,NULL,"Yes",3,27,3,2,5,"4",0
+"EMP0253","D06","R17","E1","602864.00",2,"8 years 4 mons 5 days","No",NULL,NULL,"No",4,40,5,5,4,"8",0
+"EMP0254","D07","R18","E2","789669.00",4,"4 years 1 mon 2 days","No",NULL,NULL,"Yes",4,24,2,2,16,"4",0
+"EMP0255","D03","R12","E1","468792.00",4,"2 years 5 mons 27 days","No",NULL,NULL,"No",1,10,2,3,20,"2",0
+"EMP0256","D09","R17","E1","421732.00",3,"7 years 11 mons 18 days","No",NULL,NULL,"No",1,5,2,2,11,"7",0
+"EMP0257","D01","R04","E4","2548641.00",3,"6 mons 29 days","No",NULL,NULL,"No",3,21,4,4,3,"0",0
+"EMP0258","D05","R07","E3","1926689.00",3,"5 years 7 mons 23 days","No",NULL,NULL,"No",6,42,2,2,13,"5",0
+"EMP0259","D06","R17","E1","617115.00",3,"7 years 9 mons 16 days","No",NULL,NULL,"No",3,30,3,4,11,"7",0
+"EMP0260","D09","R17","E1","354704.00",5,"5 years 10 mons 9 days","No",NULL,NULL,"Yes",6,60,3,2,2,"5",0
+"EMP0261","D04","R14","E1","425119.00",5,"5 years 1 mon 21 days","No",NULL,NULL,"Yes",6,36,4,4,3,"5",0
+"EMP0262","D01","R02","E2","899733.00",2,"8 years 8 mons 5 days","No",NULL,NULL,"No",2,16,2,2,7,"8",0
+"EMP0263","D09","R17","E1","443316.00",4,"6 years 2 mons 12 days","No",NULL,NULL,"No",2,16,5,5,7,"6",0
+"EMP0264","D07","R18","E2","701649.00",4,"9 years 2 mons 18 days","No",NULL,NULL,"Yes",1,8,5,5,11,"9",0
+"EMP0265","D03","R13","E3","1952219.00",4,"7 years 6 mons 4 days","No",NULL,NULL,"No",1,9,4,4,10,"7",0
+"EMP0266","D01","R01","E1","525743.00",3,"6 years 10 mons 16 days","No",NULL,NULL,"No",4,32,5,4,16,"6",0
+"EMP0267","D04","R14","E1","399298.00",5,"1 year 3 days","No",NULL,NULL,"No",2,16,3,3,9,"1",0
+"EMP0268","D01","R01","E1","436329.00",3,"8 mons 14 days","No",NULL,NULL,"No",3,27,5,5,9,"0",0
+"EMP0269","D01","R05","M1","3331195.00",4,"3 years 4 mons 20 days","No",NULL,NULL,"No",1,9,2,2,15,"3",0
+"EMP0270","D03","R12","E1","397516.00",3,"5 years 4 mons 24 days","No",NULL,NULL,"No",3,30,4,4,11,"5",0
+"EMP0271","D01","R06","E2","914586.00",5,"5 years 2 mons 7 days","No",NULL,NULL,"No",1,11,2,3,6,"5",0
+"EMP0272","D08","R20","E4","2682737.00",1,"6 years 2 days","No",NULL,NULL,"No",0,0,4,4,2,"6",0
+"EMP0273","D02","R09","E1","586508.00",4,"6 years 6 mons 2 days","Yes","2019-09-22","Compensation","No",0,0,1,1,13,"6",1
+"EMP0274","D03","R13","E3","1343809.00",2,"3 years 8 mons 19 days","No",NULL,NULL,"No",2,10,2,2,10,"3",0
+"EMP0275","D01","R07","E3","1166058.00",4,"2 years 3 days","No",NULL,NULL,"No",5,25,4,4,12,"2",0
+"EMP0276","D10","R03","E3","1575299.00",3,"3 years 6 mons 15 days","No",NULL,NULL,"No",2,12,4,3,13,"3",0
+"EMP0277","D06","R17","E1","383620.00",2,"7 years 11 mons 4 days","No",NULL,NULL,"No",4,20,4,5,4,"7",0
+"EMP0480","D06","R06","E2","854988.00",4,"2 mons 2 days","No",NULL,NULL,"No",2,14,5,5,7,"0",0
+"EMP0278","D02","R10","E2","626138.00",3,"1 year 7 mons 8 days","No",NULL,NULL,"No",4,36,3,4,15,"1",0
+"EMP0279","D09","R17","E1","492142.00",4,"3 years 2 mons 19 days","No",NULL,NULL,"No",1,11,4,3,0,"3",0
+"EMP0280","D01","R01","E1","525830.00",5,"5 years 11 mons 23 days","No",NULL,NULL,"No",4,32,3,4,3,"5",0
+"EMP0281","D08","R07","E3","1508571.00",2,"3 mons 29 days","No",NULL,NULL,"No",0,0,3,3,14,"0",0
+"EMP0282","D09","R09","E1","545247.00",5,"7 years 9 mons 7 days","No",NULL,NULL,"No",2,10,2,2,1,"7",0
+"EMP0283","D09","R17","E1","481787.00",3,"6 years 9 mons 13 days","No",NULL,NULL,"No",1,10,4,4,2,"6",0
+"EMP0284","D08","R03","E3","1522349.00",5,"7 years 11 mons 4 days","No",NULL,NULL,"Yes",2,22,3,3,9,"7",0
+"EMP0285","D01","R04","E4","2077883.00",1,"2 years 1 day","No",NULL,NULL,"No",3,30,3,4,15,"2",0
+"EMP0286","D07","R02","E2","722235.00",3,"2 years 18 days","No",NULL,NULL,"No",3,15,4,4,12,"2",0
+"EMP0287","D02","R09","E1","454690.00",1,"5 years 6 mons 15 days","No",NULL,NULL,"No",3,24,2,1,0,"5",0
+"EMP0288","D01","R02","E2","1197143.00",4,"7 years 6 mons 17 days","No",NULL,NULL,"Yes",4,44,4,3,10,"7",0
+"EMP0289","D01","R07","E3","1287635.00",4,"1 year 2 mons 28 days","No",NULL,NULL,"No",3,21,5,5,9,"1",0
+"EMP0290","D06","R06","E2","895792.00",5,"1 year 6 mons 17 days","No",NULL,NULL,"No",4,24,4,5,0,"1",0
+"EMP0291","D07","R18","E2","733697.00",4,"7 years 10 mons 17 days","No",NULL,NULL,"No",3,15,4,3,10,"7",0
+"EMP0292","D01","R03","E3","1846222.00",2,"8 years 8 mons","No",NULL,NULL,"No",3,18,2,2,8,"8",0
+"EMP0293","D08","R20","E4","2359043.00",5,"6 years 3 mons 2 days","No",NULL,NULL,"Yes",2,20,4,4,5,"6",0
+"EMP0294","D06","R17","E1","348856.00",4,"9 mons 26 days","Yes","2024-07-02","Better Opportunity","No",0,0,3,3,15,"0",1
+"EMP0295","D02","R10","E2","1003813.00",3,"7 years 1 mon 8 days","No",NULL,NULL,"No",4,28,4,3,13,"7",0
+"EMP0296","D05","R16","E2","1122053.00",4,"1 year 8 mons 15 days","No",NULL,NULL,"Yes",1,7,3,3,9,"1",0
+"EMP0297","D09","R09","E1","380143.00",4,"3 years 11 mons 2 days","No",NULL,NULL,"No",3,27,3,3,11,"3",0
+"EMP0298","D05","R16","E2","1119486.00",4,"2 years 8 mons 4 days","No",NULL,NULL,"No",2,10,4,4,9,"2",0
+"EMP0299","D08","R20","E4","2464344.00",4,"6 years 4 mons 9 days","Yes","2022-12-27","Career Growth","No",0,0,4,3,12,"6",1
+"EMP0300","D05","R16","E2","948874.00",1,"3 years 6 mons 8 days","No",NULL,NULL,"No",2,22,3,2,0,"3",0
+"EMP0301","D08","R08","E3","2118653.00",2,"8 years 2 mons 2 days","No",NULL,NULL,"No",4,40,5,5,13,"8",0
+"EMP0302","D09","R10","E2","748990.00",4,"2 years 6 mons 13 days","Yes","2023-07-13","Work Life Balance","No",3,27,4,3,23,"2",1
+"EMP0303","D06","R07","E3","1861938.00",5,"5 years 4 mons 10 days","No",NULL,NULL,"Yes",2,12,3,3,10,"5",0
+"EMP0304","D01","R03","E3","1858208.00",1,"7 mons 17 days","No",NULL,NULL,"No",6,66,2,2,17,"0",0
+"EMP0305","D09","R17","E1","612364.00",4,"8 years 10 mons 23 days","Yes","2020-04-15","Better Opportunity","No",1,6,5,5,8,"8",1
+"EMP0306","D09","R17","E1","574815.00",2,"1 year 9 mons 25 days","No",NULL,NULL,"No",0,0,3,3,5,"1",0
+"EMP0307","D09","R17","E1","495374.00",3,"9 years 5 mons 3 days","No",NULL,NULL,"No",1,5,2,2,10,"9",0
+"EMP0308","D02","R09","E1","339352.00",4,"3 years 7 mons 26 days","No",NULL,NULL,"Yes",4,28,5,4,2,"3",0
+"EMP0310","D02","R11","M1","2265496.00",5,"9 years 2 mons 18 days","No",NULL,NULL,"No",1,6,3,3,12,"9",0
+"EMP0311","D07","R18","E2","606269.00",3,"2 years 6 mons 28 days","No",NULL,NULL,"No",3,30,5,5,6,"2",0
+"EMP0312","D01","R01","E1","612365.00",3,"9 years 3 mons 16 days","No",NULL,NULL,"No",3,21,5,5,14,"9",0
+"EMP0313","D01","R04","E4","1973670.00",2,"2 years 9 mons 4 days","No",NULL,NULL,"No",2,10,3,3,7,"2",0
+"EMP0314","D09","R17","E1","404490.00",3,"7 years 10 mons 21 days","No",NULL,NULL,"No",6,48,3,3,6,"7",0
+"EMP0315","D06","R06","E2","858696.00",4,"1 year 5 mons 9 days","No",NULL,NULL,"No",2,16,2,2,5,"1",0
+"EMP0316","D04","R14","E1","646117.00",3,"6 years 8 days","No",NULL,NULL,"No",3,33,3,3,14,"6",0
+"EMP0317","D01","R03","E3","1441676.00",5,"2 years 11 mons 1 day","No",NULL,NULL,"No",1,6,3,3,12,"2",0
+"EMP0318","D09","R09","E1","542116.00",4,"6 years 10 mons 10 days","No",NULL,NULL,"No",6,54,4,4,13,"6",0
+"EMP0319","D08","R08","E3","1833453.00",3,"4 years 4 mons 22 days","No",NULL,NULL,"No",2,12,4,4,10,"4",0
+"EMP0320","D01","R05","M1","3484129.00",5,"5 years 11 mons 30 days","No",NULL,NULL,"Yes",3,21,4,5,12,"5",0
+"EMP0321","D02","R10","E2","724699.00",2,"6 years 26 days","No",NULL,NULL,"No",2,10,5,4,9,"6",0
+"EMP0322","D08","R08","E3","1608444.00",4,"7 years 28 days","No",NULL,NULL,"No",2,16,4,5,6,"7",0
+"EMP0323","D07","R18","E2","825732.00",4,"6 years 11 mons 2 days","No",NULL,NULL,"No",2,20,3,3,13,"6",0
+"EMP0324","D08","R20","E4","2054428.00",3,"3 years 5 mons 19 days","Yes","2023-09-01","Better Opportunity","No",4,24,3,3,5,"3",1
+"EMP0325","D07","R02","E2","878890.00",5,"8 years 2 mons 12 days","No",NULL,NULL,"No",1,7,5,5,18,"8",0
+"EMP0326","D01","R02","E2","802336.00",3,"6 years 1 mon 22 days","Yes","2020-03-31","Work Life Balance","No",1,5,3,3,12,"6",1
+"EMP0327","D03","R12","E1","617647.00",2,"7 years 1 mon 26 days","No",NULL,NULL,"No",2,12,3,3,17,"7",0
+"EMP0328","D01","R01","E1","438229.00",3,"6 years 10 mons 15 days","No",NULL,NULL,"No",2,14,2,2,11,"6",0
+"EMP0329","D04","R14","E1","577802.00",2,"9 years 5 mons 5 days","No",NULL,NULL,"No",3,21,4,3,6,"9",0
+"EMP0330","D01","R01","E1","662949.00",4,"4 years 10 mons 11 days","No",NULL,NULL,"No",1,7,5,4,12,"4",0
+"EMP0331","D06","R17","E1","524277.00",5,"3 years 9 mons 12 days","No",NULL,NULL,"No",3,18,3,4,3,"3",0
+"EMP0332","D03","R12","E1","446289.00",3,"5 years 1 mon 27 days","No",NULL,NULL,"No",5,30,4,5,11,"5",0
+"EMP0333","D01","R06","E2","1000435.00",3,"6 years 10 mons 29 days","No",NULL,NULL,"No",2,22,5,4,0,"6",0
+"EMP0334","D08","R07","E3","1648001.00",4,"1 year 8 mons 16 days","No",NULL,NULL,"No",2,12,2,2,3,"1",0
+"EMP0335","D01","R01","E1","395308.00",1,"4 years 3 mons 2 days","No",NULL,NULL,"No",5,35,2,2,14,"4",0
+"EMP0336","D01","R03","E3","1904166.00",4,"3 years 6 mons 3 days","No",NULL,NULL,"Yes",4,32,4,5,15,"3",0
+"EMP0337","D01","R02","E2","954508.00",4,"6 years 19 days","No",NULL,NULL,"No",0,0,3,3,13,"6",0
+"EMP0338","D02","R11","M1","2609025.00",3,"7 years 4 mons 20 days","No",NULL,NULL,"No",0,0,3,2,3,"7",0
+"EMP0339","D05","R16","E2","989559.00",4,"7 years 4 mons 10 days","No",NULL,NULL,"Yes",1,6,4,4,9,"7",0
+"EMP0340","D04","R15","M1","2494131.00",1,"9 years 2 mons 27 days","No",NULL,NULL,"No",3,30,4,4,10,"9",0
+"EMP0341","D06","R17","E1","351906.00",4,"6 years 10 mons 28 days","No",NULL,NULL,"No",3,21,2,2,7,"6",0
+"EMP0342","D03","R12","E1","540896.00",2,"1 year 6 mons 11 days","Yes","2024-01-16","Career Growth","No",1,6,5,5,8,"1",1
+"EMP0343","D01","R02","E2","884182.00",2,"3 years 6 mons 18 days","No",NULL,NULL,"No",2,20,3,3,9,"3",0
+"EMP0344","D02","R09","E1","443604.00",2,"1 year 8 mons 6 days","No",NULL,NULL,"No",4,20,4,4,12,"1",0
+"EMP0345","D02","R09","E1","466831.00",3,"1 year 8 mons 18 days","No",NULL,NULL,"No",3,27,3,3,5,"1",0
+"EMP0346","D07","R18","E2","885618.00",5,"6 years 6 mons 1 day","No",NULL,NULL,"No",4,32,3,4,12,"6",0
+"EMP0347","D05","R16","E2","730319.00",4,"3 years 10 mons 29 days","No",NULL,NULL,"No",2,22,3,3,1,"3",0
+"EMP0348","D01","R02","E2","1145502.00",4,"7 years 1 mon 24 days","No",NULL,NULL,"No",2,22,4,3,11,"7",0
+"EMP0349","D07","R18","E2","826720.00",5,"1 year 11 mons 13 days","No",NULL,NULL,"No",1,6,4,4,8,"1",0
+"EMP0350","D01","R05","M1","3798049.00",3,"9 years 2 mons 1 day","No",NULL,NULL,"No",2,12,4,4,14,"9",0
+"EMP0351","D04","R15","M1","1965432.00",4,"3 years 10 mons 26 days","No",NULL,NULL,"Yes",1,9,4,5,9,"3",0
+"EMP0352","D09","R17","E1","580046.00",4,"4 years 11 mons 28 days","No",NULL,NULL,"Yes",2,12,4,5,12,"4",0
+"EMP0353","D10","R06","E2","1086732.00",4,"2 years 1 mon 5 days","No",NULL,NULL,"No",3,27,3,3,8,"2",0
+"EMP0355","D07","R18","E2","748545.00",5,"6 years 7 mons 4 days","No",NULL,NULL,"No",3,30,2,1,8,"6",0
+"EMP0356","D03","R06","E2","778558.00",5,"1 year 3 mons 18 days","No",NULL,NULL,"No",3,27,3,2,5,"1",0
+"EMP0380","D09","R09","E1","482969.00",3,"1 mon 7 days","No",NULL,NULL,"No",1,8,3,3,5,"0",0
+"EMP0357","D01","R03","E3","1501561.00",2,"8 years 2 mons 15 days","No",NULL,NULL,"No",0,0,3,3,4,"8",0
+"EMP0358","D05","R06","E2","726161.00",3,"1 year 9 mons 14 days","No",NULL,NULL,"No",1,9,3,3,9,"1",0
+"EMP0359","D09","R09","E1","385886.00",5,"2 years 1 mon 2 days","No",NULL,NULL,"No",2,12,3,3,9,"2",0
+"EMP0360","D07","R18","E2","615516.00",1,"4 years 10 mons 19 days","No",NULL,NULL,"No",3,33,2,1,10,"4",0
+"EMP0361","D06","R17","E1","478915.00",2,"5 years 9 mons 17 days","No",NULL,NULL,"No",1,7,3,2,10,"5",0
+"EMP0362","D09","R17","E1","461601.00",3,"4 years 1 mon 24 days","No",NULL,NULL,"No",2,10,3,2,3,"4",0
+"EMP0363","D03","R12","E1","587392.00",5,"6 years 6 mons 18 days","No",NULL,NULL,"Yes",1,7,1,1,5,"6",0
+"EMP0364","D01","R02","E2","927047.00",4,"5 years 2 mons 2 days","No",NULL,NULL,"No",0,0,4,3,14,"5",0
+"EMP0365","D08","R03","E3","2025318.00",5,"9 years 3 mons 5 days","No",NULL,NULL,"Yes",2,20,5,5,9,"9",0
+"EMP0366","D06","R17","E1","329958.00",3,"2 years 5 mons 21 days","No",NULL,NULL,"No",3,30,4,5,9,"2",0
+"EMP0367","D02","R11","M1","2500273.00",3,"5 years 7 mons 16 days","No",NULL,NULL,"No",1,8,4,4,12,"5",0
+"EMP0368","D01","R03","E3","2201780.00",4,"9 years 5 mons 10 days","No",NULL,NULL,"No",1,7,4,5,11,"9",0
+"EMP0369","D01","R01","E1","488436.00",4,"7 years 1 mon 13 days","No",NULL,NULL,"No",0,0,5,5,6,"7",0
+"EMP0370","D03","R12","E1","457841.00",3,"2 years 1 mon 14 days","No",NULL,NULL,"No",3,18,4,4,13,"2",0
+"EMP0371","D09","R17","E1","386524.00",4,"5 years 11 mons 28 days","No",NULL,NULL,"No",4,32,4,4,9,"5",0
+"EMP0372","D06","R06","E2","1174038.00",3,"6 years 4 mons 24 days","No",NULL,NULL,"No",1,5,4,4,11,"6",0
+"EMP0373","D04","R14","E1","441627.00",3,"4 years 10 mons 20 days","No",NULL,NULL,"No",2,10,5,5,18,"4",0
+"EMP0374","D03","R13","E3","1896236.00",5,"8 years 5 mons 3 days","No",NULL,NULL,"No",1,6,5,4,12,"8",0
+"EMP0375","D08","R20","E4","2504590.00",3,"2 years 5 mons 15 days","No",NULL,NULL,"No",2,20,3,4,9,"2",0
+"EMP0376","D03","R07","E3","1647711.00",1,"5 years 10 mons 11 days","No",NULL,NULL,"No",0,0,4,4,12,"5",0
+"EMP0377","D07","R18","E2","612952.00",4,"5 years 5 mons 1 day","No",NULL,NULL,"Yes",0,0,1,2,12,"5",0
+"EMP0379","D03","R12","E1","379566.00",2,"1 year 5 mons 5 days","No",NULL,NULL,"No",3,15,3,4,13,"1",0
+"EMP0381","D09","R17","E1","484998.00",4,"8 years 7 mons 17 days","No",NULL,NULL,"No",1,5,2,3,10,"8",0
+"EMP0382","D09","R17","E1","388755.00",4,"1 year 5 mons 18 days","No",NULL,NULL,"No",1,11,3,3,10,"1",0
+"EMP0383","D04","R15","M1","2377849.00",5,"7 years 1 mon 22 days","No",NULL,NULL,"No",3,21,4,4,14,"7",0
+"EMP0384","D02","R09","E1","345874.00",3,"3 years 3 mons 9 days","No",NULL,NULL,"No",2,14,4,3,8,"3",0
+"EMP0385","D09","R17","E1","320548.00",3,"1 year 5 mons 20 days","Yes","2023-11-09","Better Opportunity","No",1,11,2,1,6,"1",1
+"EMP0386","D06","R17","E1","490457.00",4,"1 year 2 mons 4 days","No",NULL,NULL,"No",2,16,4,4,14,"1",0
+"EMP0387","D07","R18","E2","565732.00",4,"1 year 4 mons 2 days","No",NULL,NULL,"No",3,18,2,2,3,"1",0
+"EMP0388","D09","R17","E1","370905.00",1,"9 years 15 days","No",NULL,NULL,"No",1,9,2,2,14,"9",0
+"EMP0389","D06","R07","E3","1508332.00",3,"1 year 1 mon 5 days","No",NULL,NULL,"No",1,7,2,2,7,"1",0
+"EMP0390","D09","R09","E1","325096.00",5,"10 mons 19 days","No",NULL,NULL,"No",6,42,5,5,12,"0",0
+"EMP0391","D01","R03","E3","1341373.00",3,"5 years 9 mons 29 days","No",NULL,NULL,"No",2,12,4,4,8,"5",0
+"EMP0392","D01","R08","E3","2094230.00",2,"5 years 2 mons 3 days","No",NULL,NULL,"No",4,40,1,1,6,"5",0
+"EMP0393","D03","R12","E1","460149.00",4,"2 years 7 mons 13 days","No",NULL,NULL,"No",3,33,4,4,3,"2",0
+"EMP0394","D07","R18","E2","863541.00",4,"7 years 9 mons","No",NULL,NULL,"No",1,8,4,4,8,"7",0
+"EMP0395","D02","R09","E1","468627.00",5,"3 years 2 mons 6 days","No",NULL,NULL,"No",1,7,4,4,17,"3",0
+"EMP0396","D09","R17","E1","422577.00",2,"2 years 6 mons 21 days","No",NULL,NULL,"No",0,0,4,4,0,"2",0
+"EMP0397","D02","R10","E2","813330.00",2,"4 years 10 mons 8 days","No",NULL,NULL,"No",1,9,4,4,12,"4",0
+"EMP0398","D05","R16","E2","1240931.00",4,"8 years 6 mons 18 days","No",NULL,NULL,"No",1,11,2,2,18,"8",0
+"EMP0399","D06","R17","E1","402668.00",3,"1 year 5 mons","No",NULL,NULL,"No",3,33,4,3,13,"1",0
+"EMP0400","D01","R02","E2","1156128.00",3,"8 years 11 mons 1 day","No",NULL,NULL,"No",3,27,4,4,13,"8",0
+"EMP0401","D09","R09","E1","566128.00",5,"1 year 9 mons 6 days","No",NULL,NULL,"No",1,9,2,2,5,"1",0
+"EMP0402","D10","R19","E4","2103446.00",4,"2 years 3 mons 5 days","No",NULL,NULL,"No",3,18,1,2,9,"2",0
+"EMP0403","D09","R09","E1","413759.00",5,"8 years 8 mons 22 days","No",NULL,NULL,"No",6,66,2,3,6,"8",0
+"EMP0404","D05","R16","E2","1009582.00",5,"2 mons 20 days","No",NULL,NULL,"No",5,45,4,4,16,"0",0
+"EMP0405","D04","R15","M1","1425796.00",4,"7 mons 21 days","No",NULL,NULL,"No",3,30,4,4,18,"0",0
+"EMP0406","D06","R06","E2","986706.00",4,"6 years 10 mons 27 days","No",NULL,NULL,"No",1,9,2,1,12,"6",0
+"EMP0407","D03","R13","E3","1555892.00",4,"7 years 4 mons","No",NULL,NULL,"No",5,40,4,5,1,"7",0
+"EMP0408","D09","R17","E1","487883.00",3,"2 years 5 days","No",NULL,NULL,"No",2,12,2,2,12,"2",0
+"EMP0409","D09","R09","E1","336814.00",4,"3 years 1 mon 28 days","No",NULL,NULL,"No",1,6,3,3,13,"3",0
+"EMP0410","D01","R05","M1","4069744.00",3,"1 year 4 mons 4 days","No",NULL,NULL,"No",3,15,2,3,14,"1",0
+"EMP0411","D09","R09","E1","355404.00",5,"1 year 10 days","No",NULL,NULL,"No",0,0,1,1,9,"1",0
+"EMP0412","D05","R16","E2","871738.00",5,"6 years 4 mons 12 days","No",NULL,NULL,"No",2,10,4,4,12,"6",0
+"EMP0413","D06","R06","E2","835176.00",4,"4 years 9 mons 22 days","No",NULL,NULL,"No",2,12,3,3,9,"4",0
+"EMP0414","D04","R14","E1","368508.00",1,"2 years 6 mons 21 days","No",NULL,NULL,"No",2,14,3,3,8,"2",0
+"EMP0415","D02","R11","M1","2454524.00",1,"8 years 5 mons 28 days","Yes","2018-02-23","Compensation","No",0,0,1,1,14,"8",1
+"EMP0416","D09","R17","E1","370631.00",3,"3 years 4 mons 22 days","No",NULL,NULL,"No",3,30,3,2,14,"3",0
+"EMP0417","D04","R14","E1","584869.00",3,"8 years 7 mons 23 days","No",NULL,NULL,"No",5,55,4,4,13,"8",0
+"EMP0418","D07","R02","E2","1048220.00",3,"1 year 2 mons 5 days","No",NULL,NULL,"No",0,0,4,4,6,"1",0
+"EMP0419","D06","R17","E1","419385.00",2,"1 year 10 mons 8 days","No",NULL,NULL,"No",1,6,2,2,12,"1",0
+"EMP0420","D05","R07","E3","1551237.00",3,"4 years 8 mons 2 days","No",NULL,NULL,"No",3,21,4,4,18,"4",0
+"EMP0421","D01","R02","E2","768991.00",2,"8 years 5 mons 12 days","No",NULL,NULL,"No",2,22,2,2,6,"8",0
+"EMP0489","D01","R02","E2","849414.00",3,"9 years 3 mons 13 days","Yes","2015-12-15","Compensation","No",0,0,4,4,2,"9",1
+"EMP0490","D01","R02","E2","1043392.00",3,"7 years 3 mons 18 days","No",NULL,NULL,"No",1,11,3,3,14,"7",0
+"EMP0491","D08","R06","E2","1048384.00",4,"6 years 15 days","No",NULL,NULL,"Yes",0,0,2,2,13,"6",0
+"EMP0492","D09","R17","E1","649554.00",4,"8 years 4 mons 27 days","No",NULL,NULL,"No",2,14,5,5,16,"8",0
+"EMP0493","D05","R16","E2","826683.00",2,"1 year 10 mons 29 days","No",NULL,NULL,"No",1,9,2,2,10,"1",0
+"EMP0494","D05","R06","E2","1084911.00",4,"7 years 2 mons 15 days","Yes","2019-10-04","Compensation","No",3,24,1,1,11,"7",1
+"EMP0496","D02","R10","E2","693694.00",2,"4 years 6 mons 21 days","No",NULL,NULL,"No",5,45,5,5,10,"4",0
+"EMP0497","D01","R01","E1","371893.00",1,"3 mons 17 days","No",NULL,NULL,"No",2,20,4,4,11,"0",0
+"EMP0498","D09","R17","E1","352470.00",4,"5 years 5 mons 25 days","No",NULL,NULL,"Yes",2,20,5,5,11,"5",0
+"EMP0499","D01","R04","E4","2457252.00",3,"8 years 24 days","No",NULL,NULL,"No",1,8,1,1,9,"8",0
+"EMP0500","D06","R17","E1","367592.00",4,"9 years 29 days","No",NULL,NULL,"No",2,18,2,2,2,"9",0
+"EMP0422","D09","R17","E1","351699.00",5,"1 year 8 mons 22 days","No",NULL,NULL,"No",0,0,3,3,8,"1",0
+"EMP0423","D02","R09","E1","379315.00",3,"2 years 3 mons 22 days","No",NULL,NULL,"No",3,15,2,3,1,"2",0
+"EMP0424","D10","R07","E3","1457255.00",1,"1 year 3 mons 15 days","No",NULL,NULL,"No",5,50,5,5,13,"1",0
+"EMP0425","D01","R02","E2","919763.00",4,"6 years 4 mons 26 days","Yes","2020-03-25","Work Life Balance","No",2,12,4,5,5,"6",1
+"EMP0426","D01","R03","E3","1622954.00",5,"9 years 5 mons 15 days","No",NULL,NULL,"No",6,60,1,1,9,"9",0
+"EMP0427","D01","R03","E3","1553889.00",4,"3 years 10 mons 22 days","No",NULL,NULL,"No",2,12,3,3,12,"3",0
+"EMP0428","D08","R08","E3","1828385.00",5,"8 years 2 mons 3 days","No",NULL,NULL,"No",2,12,5,4,9,"8",0
+"EMP0429","D01","R03","E3","1892811.00",2,"7 years 2 mons 14 days","Yes","2021-07-26","Compensation","No",2,18,3,3,11,"7",1
+"EMP0430","D02","R10","E2","876978.00",4,"6 years 4 mons 4 days","No",NULL,NULL,"Yes",0,0,3,3,12,"6",0
+"EMP0431","D02","R09","E1","589488.00",3,"1 year 8 mons 26 days","No",NULL,NULL,"No",1,6,4,4,5,"1",0
+"EMP0432","D07","R18","E2","634934.00",4,"7 years 11 mons 11 days","No",NULL,NULL,"No",1,8,5,5,9,"7",0
+"EMP0013","D05","R16","E2","739876.00",4,"3 years 10 mons 15 days","No",NULL,NULL,"No",2,18,4,4,21,"3",0
+"EMP0015","D09","R17","E1","450231.00",1,"2 years 4 mons 7 days","No",NULL,NULL,"No",3,15,3,2,10,"2",0
+"EMP0495","D09","R17","E1","622909.00",5,"6 years 11 mons 26 days","No",NULL,NULL,"No",2,16,3,3,4,"6",0
+"EMP0433","D07","R18","E2","871750.00",3,"5 years 6 mons 29 days","No",NULL,NULL,"No",4,44,3,3,3,"5",0
+"EMP0434","D06","R07","E3","1809011.00",5,"2 years 9 mons 14 days","No",NULL,NULL,"No",1,10,5,4,11,"2",0
+"EMP0435","D02","R10","E2","766511.00",4,"5 years 6 mons 30 days","No",NULL,NULL,"No",5,40,4,4,18,"5",0
+"EMP0436","D03","R12","E1","553324.00",1,"5 years 1 mon 25 days","No",NULL,NULL,"No",6,60,5,4,7,"5",0
+"EMP0437","D07","R18","E2","770308.00",5,"8 years 3 mons 29 days","No",NULL,NULL,"No",0,0,3,3,19,"8",0
+"EMP0438","D03","R12","E1","460226.00",3,"5 years 4 mons 11 days","No",NULL,NULL,"No",2,10,5,5,8,"5",0
+"EMP0439","D03","R13","E3","1743180.00",4,"6 years 1 mon 5 days","No",NULL,NULL,"No",1,11,3,3,16,"6",0
+"EMP0440","D02","R11","M1","2083038.00",4,"8 years 4 mons 21 days","No",NULL,NULL,"No",2,22,4,4,9,"8",0
+"EMP0441","D01","R02","E2","1024778.00",2,"6 years 6 days","No",NULL,NULL,"No",1,5,3,3,11,"6",0
+"EMP0442","D07","R18","E2","753402.00",4,"8 years 6 mons 19 days","No",NULL,NULL,"Yes",7,77,3,3,3,"8",0
+"EMP0443","D02","R09","E1","404988.00",3,"1 year 2 mons 28 days","Yes","2024-01-29","Better Opportunity","No",5,40,5,5,12,"1",1
+"EMP0444","D02","R10","E2","945584.00",5,"7 years 2 mons 10 days","No",NULL,NULL,"No",1,8,3,3,10,"7",0
+"EMP0445","D05","R16","E2","882540.00",2,"5 years","No",NULL,NULL,"No",2,18,5,5,10,"5",0
+"EMP0446","D01","R06","E2","770428.00",3,"5 years 9 days","No",NULL,NULL,"No",2,16,4,4,8,"5",0
+"EMP0447","D08","R20","E4","2365452.00",4,"7 years 2 mons 21 days","No",NULL,NULL,"Yes",5,40,3,3,14,"7",0
+"EMP0448","D09","R17","E1","358358.00",4,"8 years 9 mons 13 days","No",NULL,NULL,"No",2,14,4,4,6,"8",0
+"EMP0449","D10","R06","E2","785731.00",3,"3 years 3 mons 21 days","No",NULL,NULL,"No",4,40,3,2,7,"3",0
+"EMP0450","D02","R09","E1","470262.00",3,"5 years 7 mons 7 days","No",NULL,NULL,"No",1,8,3,3,11,"5",0
+"EMP0451","D06","R17","E1","557828.00",5,"4 years 8 mons 15 days","No",NULL,NULL,"Yes",2,16,3,3,1,"4",0
+"EMP0452","D04","R14","E1","513228.00",4,"7 years 6 mons 29 days","No",NULL,NULL,"No",2,22,4,5,9,"7",0
+"EMP0453","D05","R06","E2","732002.00",2,"1 year 13 days","Yes","2024-01-15","Work Life Balance","No",2,16,3,3,7,"1",1
+"EMP0454","D03","R06","E2","988202.00",4,"6 years 5 mons 18 days","No",NULL,NULL,"No",1,8,1,1,6,"6",0
+"EMP0455","D02","R09","E1","529228.00",1,"1 mon 17 days","No",NULL,NULL,"No",2,20,4,5,14,"0",0
+"EMP0456","D06","R07","E3","1380606.00",4,"9 years 4 mons 24 days","No",NULL,NULL,"No",1,7,4,3,6,"9",0
+"EMP0457","D07","R18","E2","803287.00",2,"6 years 2 mons 25 days","No",NULL,NULL,"No",5,40,4,4,10,"6",0
+"EMP0458","D07","R18","E2","609505.00",2,"8 years 7 mons 8 days","No",NULL,NULL,"No",1,9,4,4,0,"8",0
+"EMP0459","D01","R05","M1","3078517.00",3,"9 years 24 days","No",NULL,NULL,"No",2,18,4,4,7,"9",0
+"EMP0460","D01","R03","E3","1598482.00",2,"2 years 6 mons 16 days","No",NULL,NULL,"No",3,24,2,3,7,"2",0
+"EMP0461","D02","R09","E1","515228.00",2,"5 years 11 mons 9 days","No",NULL,NULL,"No",0,0,3,4,10,"5",0
+"EMP0462","D01","R02","E2","750887.00",3,"7 years 1 mon 30 days","No",NULL,NULL,"No",1,9,4,4,2,"7",0
+"EMP0463","D07","R18","E2","633714.00",1,"2 years 9 mons 21 days","No",NULL,NULL,"No",1,6,3,2,13,"2",0
+"EMP0464","D05","R16","E2","994639.00",4,"4 years 1 mon 13 days","Yes","2020-11-16","Work Life Balance","No",2,18,3,3,15,"4",1
+"EMP0465","D06","R07","E3","1306086.00",2,"3 years 4 mons 22 days","No",NULL,NULL,"No",6,54,3,3,11,"3",0
+"EMP0466","D03","R12","E1","486276.00",3,"2 years 11 mons 8 days","No",NULL,NULL,"No",0,0,3,2,8,"2",0
+"EMP0214","D06","R17","E1","409441.00",5,"7 mons 27 days","No",NULL,NULL,"No",2,14,4,3,10,"0",0
+"EMP0467","D07","R18","E2","680012.00",4,"8 years 1 mon 7 days","No",NULL,NULL,"No",0,0,4,5,16,"8",0
+"EMP0468","D06","R17","E1","585931.00",4,"4 years 20 days","No",NULL,NULL,"Yes",5,40,3,3,0,"4",0
+"EMP0469","D04","R15","M1","2075638.00",4,"1 year 9 mons 28 days","No",NULL,NULL,"Yes",3,33,2,2,16,"1",0
+"EMP0470","D09","R10","E2","923967.00",4,"3 years 22 days","No",NULL,NULL,"No",2,14,2,2,11,"3",0
+"EMP0471","D01","R05","M1","2897374.00",3,"9 mons 23 days","No",NULL,NULL,"No",0,0,4,3,0,"0",0
+"EMP0472","D04","R14","E1","336134.00",4,"3 mons 2 days","No",NULL,NULL,"No",4,20,2,2,18,"0",0
+"EMP0473","D01","R02","E2","738878.00",3,"11 mons 6 days","No",NULL,NULL,"No",3,24,3,3,14,"0",0
+"EMP0474","D08","R20","E4","1883658.00",5,"5 years 7 mons 29 days","No",NULL,NULL,"Yes",1,9,3,3,1,"5",0
+"EMP0475","D02","R09","E1","366367.00",5,"6 years 5 mons 27 days","No",NULL,NULL,"Yes",2,18,4,4,6,"6",0
+"EMP0476","D01","R02","E2","1062880.00",3,"6 years 7 mons 14 days","Yes","2019-04-12","Better Opportunity","No",3,33,3,3,6,"6",1
+"EMP0477","D01","R02","E2","958040.00",4,"7 years 2 mons 11 days","No",NULL,NULL,"No",4,40,3,2,5,"7",0
+"EMP0478","D07","R18","E2","776988.00",2,"3 years 10 mons 10 days","No",NULL,NULL,"No",2,16,4,5,11,"3",0
+"EMP0479","D06","R17","E1","584481.00",4,"3 years 9 mons 14 days","No",NULL,NULL,"No",1,6,3,3,9,"3",0
+"EMP0241","D02","R09","E1","363136.00",4,"6 years 5 mons 10 days","No",NULL,NULL,"No",3,33,4,4,9,"6",0
+"EMP0001","D03","R07","E3","1413856.00",4,"3 years 7 mons 8 days","No",NULL,NULL,"No",3,18,3,2,13,"3",0
+"EMP0016","D04","R14","E1","491674.00",2,"5 years 6 mons 28 days","Yes","2019-07-03","Better Opportunity","No",2,14,5,5,6,"5",1
+"EMP0017","D01","R05","M1","4080198.00",3,"1 year 11 mons 4 days","No",NULL,NULL,"No",3,24,3,2,2,"1",0
+"EMP0018","D03","R13","E3","1846343.00",2,"6 years 6 mons 4 days","No",NULL,NULL,"No",2,16,3,2,6,"6",0
+"EMP0019","D06","R17","E1","545786.00",1,"3 mons 2 days","No",NULL,NULL,"No",2,14,4,4,9,"0",0
+"EMP0020","D05","R16","E2","821014.00",4,"2 mons 16 days","No",NULL,NULL,"No",1,6,3,2,13,"0",0
+"EMP0021","D07","R18","E2","804454.00",3,"7 years 5 mons 19 days","No",NULL,NULL,"No",1,9,4,3,12,"7",0
+"EMP0022","D03","R13","E3","1468974.00",3,"1 year 18 days","No",NULL,NULL,"No",6,66,4,5,12,"1",0
+"EMP0023","D06","R17","E1","416235.00",3,"8 years 1 mon 24 days","No",NULL,NULL,"No",0,0,4,3,12,"8",0
+"EMP0024","D06","R17","E1","469839.00",5,"2 years 10 mons 29 days","Yes","2024-03-21","Work Life Balance","No",2,16,5,5,6,"2",1
+"EMP0025","D07","R18","E2","623919.00",3,"7 years 1 mon 2 days","No",NULL,NULL,"No",4,40,2,3,6,"7",0
+"EMP0309","D01","R01","E1","366636.00",5,"2 years","No",NULL,NULL,"No",1,11,4,4,10,"2",0
+"EMP0354","D02","R09","E1","555545.00",4,"4 years 1 mon 18 days","No",NULL,NULL,"No",2,18,4,3,3,"4",0
+"EMP0002","D01","R03","E3","1801232.00",4,"5 years 9 mons 7 days","No",NULL,NULL,"No",1,6,1,1,10,"5",0
+"EMP0003","D06","R06","E2","995217.00",2,"5 years 1 mon 30 days","No",NULL,NULL,"No",5,25,4,5,9,"5",0
+"EMP0004","D06","R17","E1","595817.00",2,"7 years 10 mons 22 days","No",NULL,NULL,"No",3,18,5,5,10,"7",0
+"EMP0005","D09","R10","E2","986766.00",4,"8 years 4 mons 15 days","No",NULL,NULL,"Yes",1,8,2,3,13,"8",0
+"EMP0006","D01","R02","E2","1034212.00",3,"4 years 18 days","No",NULL,NULL,"No",3,18,1,1,13,"4",0
+"EMP0007","D02","R09","E1","619940.00",5,"5 years 10 mons 12 days","No",NULL,NULL,"No",1,6,3,3,20,"5",0
+"EMP0008","D02","R10","E2","643877.00",4,"4 mons 17 days","No",NULL,NULL,"No",1,10,3,3,12,"0",0
+"EMP0009","D01","R02","E2","1049380.00",4,"2 years 5 mons 2 days","No",NULL,NULL,"No",4,20,3,3,7,"2",0
+"EMP0378","D01","R02","E2","925401.00",4,"4 years 7 mons","No",NULL,NULL,"No",3,33,4,3,0,"4",0
+"EMP0481","D02","R09","E1","489405.00",3,"3 years 3 mons 24 days","No",NULL,NULL,"No",2,22,3,3,4,"3",0
+"EMP0482","D08","R20","E4","1846506.00",2,"4 years 8 mons 11 days","No",NULL,NULL,"No",3,18,3,3,6,"4",0
+"EMP0483","D09","R17","E1","438320.00",1,"4 years 11 mons 9 days","No",NULL,NULL,"No",3,30,2,1,10,"4",0
+"EMP0484","D01","R02","E2","727729.00",5,"1 year 8 mons 5 days","No",NULL,NULL,"No",3,30,5,4,21,"1",0
+"EMP0485","D01","R03","E3","1736364.00",3,"10 mons 23 days","No",NULL,NULL,"No",1,7,3,4,10,"0",0
+"EMP0486","D02","R10","E2","675850.00",3,"1 year 4 mons 17 days","No",NULL,NULL,"No",1,10,3,4,1,"1",0
+"EMP0487","D01","R01","E1","559307.00",2,"2 years 6 mons 12 days","No",NULL,NULL,"No",5,35,4,4,13,"2",0
+"EMP0488","D05","R06","E2","698604.00",4,"5 years 3 mons 19 days","No",NULL,NULL,"No",0,0,2,3,2,"5",0
