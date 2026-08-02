@@ -162,7 +162,14 @@ hr_metrics h on e.employee_id=h.employee_id;
  ```
 
 *   **Overall Attrition Rate:** Determined the percentage of employees leaving the company.
+<br>
+<br>
   <img width="570" height="167" alt="pgAdmin4_2xv62uYlMO" src="https://github.com/user-attachments/assets/1fde3ad3-94ce-4ee4-a57e-79dba3d0be66" />
+  <br>
+<br>
+
+ ```m
+SQL Query
 --total_employees by education analysis
 
 select e.education,count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
@@ -172,12 +179,116 @@ as attrition_percentage
 from employees e left join hr_metrics h on
 e.employee_id=h.employee_id
 group by e.education;
+ ```
+
 *   **Gender-wise Analysis:** Analyzed employee distribution and attrition trends based on gender.
+<br>
+<br>
+<img width="578" height="150" alt="pgAdmin4_MXtXILRt02" src="https://github.com/user-attachments/assets/a06cf570-be6b-4547-8b30-0858f2a0fc85" />
+<br>
+<br>
+
+ ```m
+---ii)total_employees by gender analysis
+
+select e.gender,count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
+count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
+(sum(attrition_check)::numeric/count(e.employee_id)::numeric * 100)::decimal(10,2)||'%'
+as attrition_percentage
+from employees e left join hr_metrics h on
+e.employee_id=h.employee_id
+group by gender;
+ ```
+<br>
+<br>
+
 *   **Department & Role Breakdown:** Grouped employees to see which departments have the highest turnover.
+<br>
+<br>
+
+  *   **Performance & Work-Life Balance:** Analyzed average training hours, job satisfaction, and overtime to see how they correlate with employee attrition.
+<br>
+<br><table>
+  <tr>
+ <td><img width="753" height="247" alt="RC9QaEAp0j" src="https://github.com/user-attachments/assets/5caf21a0-9a0e-4eea-a986-9914e58b984d" /></td>
+ <td><img width="795" height="257" alt="kQeXXF4ODi" src="https://github.com/user-attachments/assets/38622992-afd1-459f-9c26-0b1cb3b039bc" /></td>
+  </tr>
+</table>
+<br>
+<br>
+
+ ```m
+SQL Querys
+---i)total_data_by department
+
+with
+employee_count  as
+(select dept_id, count(employee_id)as employees from employees 
+group by dept_id )
+select d.dept_id,d.dept_name,d.dept_head,e.employees,sum(attrition_check)as attrition,
+(e.employees-sum(attrition_check)) as working_employees,
+((sum(attrition_check)::numeric/e.employees::numeric)*100)::int::text||'%' as attrition_percentage,
+avg(h.performance)::decimal(10,2)as avg_performance,avg(h.training_count)::decimal(10,2)as avg_total_training_attends,
+avg(h.training_hours)::decimal(10,2)as avg_total_training_hours,avg(h.job_satisfaction)::decimal(10,2)
+as avg_job_satisfaction_ratings,avg(h.work_life_balance)::decimal(10,2)as avg_work_life_balance_ratings,
+avg(h.overtime_hours_monthly)::decimal(10,2)as avg_overtimes_hours_monthly
+from department d left join
+hr_metrics h on d.dept_id = h.dept_id
+left join employee_count e on d.dept_id = e.dept_id
+group by d.dept_id,d.dept_name,d.dept_head,e.employees
+order by d.dept_id;
+
+--count of employees by roles
+
+with 
+employees as
+(select r.role_id,r.role_name,r.band,count(e.employee_id)as employees from role r left join
+employees e on r.role_id=e.role_id group by r.role_id),
+attrition as
+(select r.role_id,sum(h.attrition_check)as attrition from role r
+left join hr_metrics h on r.role_id=h.role_id group by r.role_id)
+select e.role_id,e.role_name,e.band,e.employees,a.attrition,
+e.employees-a.attrition as total_working_employees,(a.attrition::numeric/e.employees::numeric
+*100)::decimal(10,2)||'%'as attrition_percentage from employees e
+left join attrition a on e.role_id=a.role_id order by e.role_id;
+ ```
+<br>
+<br>
+
 *   **Salary Compression & Check:** Wrote complex `CASE` statements and `JOIN`s to compare actual salaries against role bands, identifying employees who are **'Underpaid'** or **'Overpaid'**.
-*   **Performance & Work-Life Balance:** Analyzed average training hours, job satisfaction, and overtime to see how they correlate with employee attrition.
+   <br>
+<br><table>
+  <tr>
+ <td><img width="699" height="255" alt="pgAdmin4_pW2SRipYIz" src="https://github.com/user-attachments/assets/cfdf1eae-a921-4d07-afb6-4d9429685ae0" /></td>
+ <td><img width="733" height="394" alt="pgAdmin4_uhZh0zwC10" src="https://github.com/user-attachments/assets/ebe503e4-b089-4ffc-ac8f-cf31594a9aec" /></td>
+  </tr>
+</table>
+<br>
+<br>
 
+ ```m
+SQL Querys
+---department wise salery check 
+with
+dep as
+(select d.dept_id,d.dept_name,d.dept_head,sum(h.salary_annual_inr)as actual_salary
+from department d left join hr_metrics h on d.dept_id=h.dept_id
+where h.attrition_check='1' group by d.dept_id),
+ran as
+(select h.dept_id,r.role_id,r.role_name,r.band,sum(r.base_min)as min_salary,
+sum(base_max)as max_salary,h.attrition_check as attrition from hr_metrics h
+left join role r on h.role_id=r.role_id where h.attrition_check='1'
+group by h.dept_id,r.role_id,h.attrition_check)
 
+---role wise salery check 
+select r.role_id,r.role_name,r.band,r.base_min,r.base_max,sum(h.salary_annual_inr) as actual_salary,
+case when sum(h.salary_annual_inr) between r.base_max and r.base_min then 'in range'
+when sum(h.salary_annual_inr)<r.base_min then 'under paid' else 'over paid' end as checking
+ from role r left join hr_metrics h on trim(r.role_id)=trim(h.role_id)
+group by r.role_id,r.role_name,r.band order by r.role_id;
+ ```
+<br>
+<br>
 
 ## 💡 3. Business Value & Project Benefits
 Why is this project useful for a business?
