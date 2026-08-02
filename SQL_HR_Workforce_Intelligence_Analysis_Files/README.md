@@ -260,7 +260,7 @@ left join attrition a on e.role_id=a.role_id order by e.role_id;
 <table>
   <tr>
  <td><img width="699" height="255" alt="pgAdmin4_pW2SRipYIz" src="https://github.com/user-attachments/assets/cfdf1eae-a921-4d07-afb6-4d9429685ae0" /></td>
- <td><img width="733" height="394" alt="pgAdmin4_uhZh0zwC10" src="https://github.com/user-attachments/assets/ebe503e4-b089-4ffc-ac8f-cf31594a9aec" /></td>
+ <td><img width="733" height="365" alt="pgAdmin4_uhZh0zwC10" src="https://github.com/user-attachments/assets/14eee878-014b-48f4-b2be-38e104941c2e" /></td>
   </tr>
 </table>
 <br>
