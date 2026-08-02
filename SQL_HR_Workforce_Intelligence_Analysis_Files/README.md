@@ -39,8 +39,6 @@ The raw dataset was imported by creating tables in SQL. The initial  AI-generate
 ---
 
 *   **Calculated Columns:** Extracted and calculated exact employee `age` and `working_years` (tenure) dynamically using dates.
-
-<br>
 <br>
 <img width="841" height="363" alt="pgAdmin4_XP7M6g3mSt" src="https://github.com/user-attachments/assets/f646522f-de6c-45cd-9d77-7477b6b1eb72" />
 <br>
@@ -89,8 +87,10 @@ UPDATE employees
 set working_years = date_trunc('day',age((select max(attrition_date)
 from hr_metrics),hire_date));
  ```
- *   **Categorization:** Created new conditional columns (e.g., converting text-based attrition to binary checks for easier calculation).
 <br>
+<br>
+
+ *   **Categorization:** Created new conditional columns (e.g., converting text-based attrition to binary checks for easier calculation).
 <br>
 <img width="871" height="427" alt="pgAdmin4_KotW3Arlen" src="https://github.com/user-attachments/assets/ee0ccfd4-c5d1-4a15-8efa-6ed0a088bb5b" />
 <br>
@@ -106,6 +106,7 @@ set attrition_check=case
 when Lower(attrition) 
 ='no'then 0 else 1 end ;
  ```
+<br>
 <br>
 
 * **Schema Optimization**: Dropped unnecessary columns to reduce noise and renamed existing columns for better clarity and standardization.
@@ -144,8 +145,7 @@ Once the data was clean, I performed exploratory data analysis (EDA) to answer c
 
 *   **Total Workforce Count:** Calculated the exact number of active vs. past employees.
 <br>
-<br>
-*   <img width="442" height="100" alt="pgAdmin4_i6tv4K4jda" src="https://github.com/user-attachments/assets/3e2ca8dd-b14f-43b5-a26a-6428aa2cbc1b" />
+<img width="442" height="100" alt="pgAdmin4_i6tv4K4jda" src="https://github.com/user-attachments/assets/3e2ca8dd-b14f-43b5-a26a-6428aa2cbc1b" />
 <br>
 <br>
 SQL Query
@@ -160,9 +160,10 @@ count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
 from employees e left join
 hr_metrics h on e.employee_id=h.employee_id;
  ```
+<br>
+<br>
 
 *   **Overall Attrition Rate:** Determined the percentage of employees leaving the company.
-<br>
 <br>
   <img width="570" height="167" alt="pgAdmin4_2xv62uYlMO" src="https://github.com/user-attachments/assets/1fde3ad3-94ce-4ee4-a57e-79dba3d0be66" />
   <br>
@@ -180,9 +181,10 @@ from employees e left join hr_metrics h on
 e.employee_id=h.employee_id
 group by e.education;
  ```
+<br>
+<br>
 
 *   **Gender-wise Analysis:** Analyzed employee distribution and attrition trends based on gender.
-<br>
 <br>
 <img width="578" height="150" alt="pgAdmin4_MXtXILRt02" src="https://github.com/user-attachments/assets/a06cf570-be6b-4547-8b30-0858f2a0fc85" />
 <br>
@@ -203,12 +205,10 @@ group by gender;
 <br>
 
 *   **Department & Role Breakdown:** Grouped employees to see which departments have the highest turnover.
-<br>
-<br>
 
-  *   **Performance & Work-Life Balance:** Analyzed average training hours, job satisfaction, and overtime to see how they correlate with employee attrition.
+ * **Performance & Work-Life Balance:** Analyzed average training hours, job satisfaction, and overtime to see how they correlate with employee attrition.
 <br>
-<br><table>
+<table>
   <tr>
  <td><img width="753" height="247" alt="RC9QaEAp0j" src="https://github.com/user-attachments/assets/5caf21a0-9a0e-4eea-a986-9914e58b984d" /></td>
  <td><img width="795" height="257" alt="kQeXXF4ODi" src="https://github.com/user-attachments/assets/38622992-afd1-459f-9c26-0b1cb3b039bc" /></td>
@@ -257,7 +257,7 @@ left join attrition a on e.role_id=a.role_id order by e.role_id;
 
 *   **Salary Compression & Check:** Wrote complex `CASE` statements and `JOIN`s to compare actual salaries against role bands, identifying employees who are **'Underpaid'** or **'Overpaid'**.
    <br>
-<br><table>
+<table>
   <tr>
  <td><img width="699" height="255" alt="pgAdmin4_pW2SRipYIz" src="https://github.com/user-attachments/assets/cfdf1eae-a921-4d07-afb6-4d9429685ae0" /></td>
  <td><img width="733" height="394" alt="pgAdmin4_uhZh0zwC10" src="https://github.com/user-attachments/assets/ebe503e4-b089-4ffc-ac8f-cf31594a9aec" /></td>
