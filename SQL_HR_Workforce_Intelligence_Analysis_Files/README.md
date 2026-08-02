@@ -24,7 +24,6 @@ The raw dataset was imported by creating tables in SQL. The initial  AI-generate
 *   **Data Import & Schema Setup**: Created structured SQL tables and successfully imported the raw data files.
 <br>
 <br>
-<br>
 <table>
   <tr>
  <td><img width="375" height="297" alt="pgAdmin4_GOm1F6p2HM" src="https://github.com/user-attachments/assets/5f2dca90-784d-4444-b0e1-8fe04caeb9c6" /></td>
@@ -91,33 +90,94 @@ set working_years = date_trunc('day',age((select max(attrition_date)
 from hr_metrics),hire_date));
  ```
  *   **Categorization:** Created new conditional columns (e.g., converting text-based attrition to binary checks for easier calculation).
-
+<br>
+<br>
 <img width="871" height="427" alt="pgAdmin4_KotW3Arlen" src="https://github.com/user-attachments/assets/ee0ccfd4-c5d1-4a15-8efa-6ed0a088bb5b" />
+<br>
+<br>
 
+**SQL Query**
+ ```m
+SQL Query
 ---fill data into column attrition_check
 
 update hr_metrics
 set attrition_check=case
 when Lower(attrition) 
 ='no'then 0 else 1 end ;
-  
+ ```
+<br>
+
 * **Schema Optimization**: Dropped unnecessary columns to reduce noise and renamed existing columns for better clarity and standardization.
-![Data Cleaning Screenshot](replace_this_with_your_cleaning_screenshot_link.png)
-*Caption: SQL queries used to calculate age and clean the dataset.*
+<br>
+SQL Querys
+
+ ```m
+SQL Querys
+--drop column performance_2023
+alter table hr_metrics
+drop column performance_2023;
+
+--rename column performance_2024 to performance
+alter table hr_metrics
+rename column performance_2024 to performance;
+
+--rename column training_count_2024 to training_count
+alter table hr_metrics
+rename column training_count_2024 to training_count;
+
+--rename column promotion_last_2yrs to promotion
+alter table hr_metrics
+rename column promotion_last_2yrs to promotion;
+
+--rename column training_hours_2024 to training_hours
+alter table hr_metrics
+rename column training_hours_2024 to training_hours;
+ ```
+<br>
+<br>
 
 ## 📊 2. Data Analysis & Key Questions Solved
 Once the data was clean, I performed exploratory data analysis (EDA) to answer critical HR business questions. 
 
 **Key Queries Written & Insights Generated:**
+
 *   **Total Workforce Count:** Calculated the exact number of active vs. past employees.
+<br>
+<br>
+*   <img width="442" height="100" alt="pgAdmin4_i6tv4K4jda" src="https://github.com/user-attachments/assets/3e2ca8dd-b14f-43b5-a26a-6428aa2cbc1b" />
+<br>
+<br>
+SQL Query
+
+ ```m
+SQL Query
+--total_emp,attrition,total_working_emp,attrition percentage
+
+select count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
+count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
+(sum(h.attrition_check)::numeric/count(e.employee_id)::numeric*100)::decimal(10,2) ||'%'as attrition_percentage
+from employees e left join
+hr_metrics h on e.employee_id=h.employee_id;
+ ```
+
 *   **Overall Attrition Rate:** Determined the percentage of employees leaving the company.
+  <img width="570" height="167" alt="pgAdmin4_2xv62uYlMO" src="https://github.com/user-attachments/assets/1fde3ad3-94ce-4ee4-a57e-79dba3d0be66" />
+--total_employees by education analysis
+
+select e.education,count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
+count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
+(sum(attrition_check)::numeric/count(e.employee_id)::numeric * 100)::decimal(10,2)||'%'
+as attrition_percentage
+from employees e left join hr_metrics h on
+e.employee_id=h.employee_id
+group by e.education;
 *   **Gender-wise Analysis:** Analyzed employee distribution and attrition trends based on gender.
 *   **Department & Role Breakdown:** Grouped employees to see which departments have the highest turnover.
 *   **Salary Compression & Check:** Wrote complex `CASE` statements and `JOIN`s to compare actual salaries against role bands, identifying employees who are **'Underpaid'** or **'Overpaid'**.
 *   **Performance & Work-Life Balance:** Analyzed average training hours, job satisfaction, and overtime to see how they correlate with employee attrition.
 
-![Data Analysis Screenshot](replace_this_with_your_analysis_screenshot_link.png)
-*Caption: Output showing the Salary Check and Attrition Breakdown.*
+
 
 ## 💡 3. Business Value & Project Benefits
 Why is this project useful for a business?
