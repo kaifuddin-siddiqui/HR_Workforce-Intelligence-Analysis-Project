@@ -233,7 +233,7 @@ hr_metrics h on e.employee_id=h.employee_id;
 select hire_date as hire_date,count(employee_id)as total_emp 
 from employees group by hire_date;
 
----ii)total_employees by gender analysis
+---ii)total_employees by gender 
 
 select e.gender,count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
 count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
