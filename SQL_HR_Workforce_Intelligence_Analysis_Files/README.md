@@ -191,7 +191,7 @@ group by e.education;
 <br>
 
  ```m
----ii)total_employees by gender analysis
+---ii)total_employees by gender 
 
 select e.gender,count(e.employee_id)as total_employees,sum(h.attrition_check)as attrition_count,
 count(e.employee_id)-sum(h.attrition_check)as total_working_employees,
