@@ -2,7 +2,7 @@
 End-to-End Strategic HR Workforce Intelligence Analysis | SQL Server • Power BI • Excel Power Pivot. SQL data cleaning, Star Schema architecture for data modeling, complex DAX measures and 4 Interactive dashboards delivering visibility into headcount, turnover, diversity and workforce performance to drive data-driven decisions.
 
 
-# 📊 HR Workforce Intelligence Dashboard (Power BI)
+# 📊 HR Workforce Intelligence Dashboards (Power BI)
 <br>
 <br>
 <table>
@@ -73,14 +73,52 @@ A highly optimized data model is the backbone of this dashboard.
 * **Advanced Relationships (`USERELATIONSHIP`):** The model required complex relationship structures. To handle multiple date filters and dimensions, I managed inactive relationships effectively using the `USERELATIONSHIP` DAX function, ensuring accurate calculations without compromising model integrity.
 <br>
 <img width="960" height="509" alt="xm1bdMKuqj" src="https://github.com/user-attachments/assets/1bbe531b-f37a-43de-bf7a-979d27fd3b20" />
+
 ---
-<img width="960" height="483" alt="zXCAqCdYBy" src="https://github.com/user-attachments/assets/170abdc7-1053-45de-abd7-69d9800d5fe4" />
+<img width="960" height="483" alt="zXCAqCdYBy" src="https://github.com/user-attachments/assets/ba71c39f-fba6-4f5c-8686-2e5ef07cba3f" />
+<br>
+
+---
 <br>
 
 ## 🧮 3. Advanced DAX & Dynamic Visuals
 To make the dashboard highly interactive and insightful, I utilized several advanced Power BI features with the help of AI for optimization:
+<br>
+<br>
+<br>
+<img width="1920" height="1007" alt="PBIDesktop_XxQOXX8Tt9" src="https://github.com/user-attachments/assets/222e978a-187e-49b8-b757-a424d3148ed9" />
+<br>
+
+---
 * **Field Parameters for Dynamic Reporting:** I implemented Field Parameters to give the end-user ultimate control. Through a single slicer, users can dynamically switch the metrics displayed across the dashboard's visuals (e.g., instantly toggling the charts to analyze 'Total Employees' vs. 'Attrition Employees').
+<br>
+<img width="960" height="137" alt="PBIDesktop_Q1XNmT5t6l5 png5" src="https://github.com/user-attachments/assets/9f4ddb63-df06-44cf-85e3-abc4c2ba7dac" />
+
+---
+
+<img width="960" height="292" alt="fluiUCoZ6G" src="https://github.com/user-attachments/assets/6a226b95-6461-4e15-aef9-e77e892ed5e6" />
+
+---
+<img width="882" height="135" alt="7v7kzI51wG" src="https://github.com/user-attachments/assets/44910020-49ef-475e-9a0f-e986d4a33fe7" />
+
+---
+<img width="703" height="205" alt="PBIDesktop_e6l0wLkULD" src="https://github.com/user-attachments/assets/db93928c-54a5-4695-89e6-ff582c6dc8c7" />
+
+---
+<br>
+<br>
+
 * **Calculated Columns:** Created strategic calculated columns to categorize and segment data effectively (e.g., creating custom Age Groups and Work Experience bands).
+
+<img width="960" height="492" alt="PBIDesktop_PMpoNeoRUl" src="https://github.com/user-attachments/assets/8debbbc6-3023-48ac-8571-dee182c890a1" />
+<img width="960" height="489" alt="PBIDesktop_SSeXiwT4v3" src="https://github.com/user-attachments/assets/c7d409a5-986c-4f76-bd6d-e4c0d0a7fdb0" />
+
+---
+'''m
+Calculated Columns DAX
+
+Age_group = SWITCH(TRUE(),'public employees'[age]>=45,"45-50",'public employees'[age]>=36,"36-44",'public employees'[age]>=25,"25-35",'public employees'[age]>=18,"18-24")
+'''
 * **Robust DAX Measures:** Wrote complex DAX measures for core KPIs, Time Intelligence, and conditional logic.
 
 ## 🎛️ 4. Dashboard Interactivity & UI
