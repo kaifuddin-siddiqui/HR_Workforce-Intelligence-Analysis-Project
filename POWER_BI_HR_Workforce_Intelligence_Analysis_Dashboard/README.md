@@ -3,24 +3,79 @@ End-to-End Strategic HR Workforce Intelligence Analysis | SQL Server • Power B
 
 
 # 📊 HR Workforce Intelligence Dashboard (Power BI)
+<br>
+<br>
+<table>
+  <tr>
+ <td><img width="629" height="364" alt="TjR5gAzUnJ" src="https://github.com/user-attachments/assets/88637ea0-966f-4b20-a614-57136228e43e" /></td>
+<td><img width="464" height="382" alt="PBIDesktop_OHCWQreN6u" src="https://github.com/user-attachments/assets/8c2f06f5-5515-41ce-aa9a-3b8c774918c9" /></td>
+<td><img width="433" height="362" alt="PBIDesktop_YNCCFaw8Mo" src="https://github.com/user-attachments/assets/2585bda1-af52-4b34-83b0-dd6a5c82179f" /></td>
+<td><img width="596" height="370" alt="PBIDesktop_dJ8n0RRwGj" src="https://github.com/user-attachments/assets/eb0d71c1-98d1-4319-840f-1b728da45322" /></td>
+  </tr>
+</table>
 
-![Dashboard Screenshot](replace_with_your_power_bi_dashboard_image_link_here.png)
-*Caption: Executive Overview of the HR Workforce Intelligence Dashboard.*
+*Caption: HR Workforce Intelligence Dashboards.*
+---
 
 ## 📌 Project Overview
 This project is an advanced, interactive Power BI dashboard designed to analyze HR metrics, track workforce demographics, and uncover the root causes of employee attrition. Building upon a structured SQL database, this dashboard transforms raw HR data into actionable business intelligence.
 
 The primary objective of this project is to showcase advanced Power BI capabilities, including complex data modeling, dynamic DAX calculations, and interactive reporting tailored for executive decision-making.
 
+
 ## ⚙️ 1. Data Extraction & Power Query (ETL)
-Data was initially stored in a database environment. I established a connection to import the core tables: `hr_metrics`, `employees`, `department`, and `role`. 
+Data was initially stored in a database environment. I established a connection to import/load the core tables: `hr_metrics`, `employees`, `department`, and `role`. 
 Using **Power Query**, I performed data shaping, applied necessary transformations, and ensured data types were fully optimized for the semantic model.
+
+<br>
+<table>
+  <tr>
+ <td><img width="960" height="509" alt="vWX3cY02UW" src="https://github.com/user-attachments/assets/d60de900-bb97-43a5-96c8-73c9b4817ab7" /></td>
+ <td><img width="960" height="484" alt="vQsLTAHpPZ" src="https://github.com/user-attachments/assets/f70d8cab-4e3b-4b59-a3d5-f1d046e765ac" /></td></tr>
+</table>
+<table>
+  <tr>
+ <td><img width="960" height="509" alt="PBIDesktop_Mf9ihhuYmA" src="https://github.com/user-attachments/assets/35cd456a-083b-4d79-9215-9f25d60f13b9" /></td>
+ <td><img width="960" height="511" alt="SOqhAcjJhW" src="https://github.com/user-attachments/assets/30531736-7fb8-426c-9d1d-86912f732777" /></td>
+  </tr>
+</table>
+
+---
+<br>
 
 ## 🗂️ 2. Data Modeling & Star Schema
 A highly optimized data model is the backbone of this dashboard. 
 * **Star Schema:** I structured the data using a Star Schema methodology to ensure fast query performance and intuitive relationship management.
+<br>
+<img width="960" height="469" alt="PBIDesktop_pTAaHGX4qH" src="https://github.com/user-attachments/assets/bd76182b-e443-403c-9bb3-e6e60cfb7011" />
+
+---
+<br>
+
 * **Date Table:** I generated a comprehensive, custom Date Table to unlock powerful Time Intelligence capabilities across the dataset.
+<br>
+<br>
+<table>
+  <tr>
+ <td><img width="960" height="509" alt="PBIDesktop_Mf9ihhuYmA" src="https://github.com/user-attachments/assets/35cd456a-083b-4d79-9215-9f25d60f13b9" /></td>
+ <td><img width="960" height="511" alt="SOqhAcjJhW" src="https://github.com/user-attachments/assets/30531736-7fb8-426c-9d1d-86912f732777" /></td>
+  </tr>
+</table>
+
+---
+<br>
+<img width="960" height="487" alt="pKZBQaGxDd1" src="https://github.com/user-attachments/assets/1360f9f1-afbe-441a-bdf2-56b4edd9d99f" />
+
+---
+<br>
+<br>
+
 * **Advanced Relationships (`USERELATIONSHIP`):** The model required complex relationship structures. To handle multiple date filters and dimensions, I managed inactive relationships effectively using the `USERELATIONSHIP` DAX function, ensuring accurate calculations without compromising model integrity.
+<br>
+<img width="960" height="509" alt="xm1bdMKuqj" src="https://github.com/user-attachments/assets/1bbe531b-f37a-43de-bf7a-979d27fd3b20" />
+---
+<img width="960" height="483" alt="zXCAqCdYBy" src="https://github.com/user-attachments/assets/170abdc7-1053-45de-abd7-69d9800d5fe4" />
+<br>
 
 ## 🧮 3. Advanced DAX & Dynamic Visuals
 To make the dashboard highly interactive and insightful, I utilized several advanced Power BI features with the help of AI for optimization:
