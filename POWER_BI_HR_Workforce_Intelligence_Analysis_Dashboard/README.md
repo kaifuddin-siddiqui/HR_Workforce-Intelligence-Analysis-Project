@@ -109,16 +109,25 @@ To make the dashboard highly interactive and insightful, I utilized several adva
 <br>
 
 * **Calculated Columns:** Created strategic calculated columns to categorize and segment data effectively (e.g., creating custom Age Groups and Work Experience bands).
-
-<img width="960" height="492" alt="PBIDesktop_PMpoNeoRUl" src="https://github.com/user-attachments/assets/8debbbc6-3023-48ac-8571-dee182c890a1" />
-<img width="960" height="489" alt="PBIDesktop_SSeXiwT4v3" src="https://github.com/user-attachments/assets/c7d409a5-986c-4f76-bd6d-e4c0d0a7fdb0" />
+<table>
+  <tr>
+ <td><img width="960" height="492" alt="PBIDesktop_PMpoNeoRUl" src="https://github.com/user-attachments/assets/8debbbc6-3023-48ac-8571-dee182c890a1" /></td>
+ <td><img width="960" height="489" alt="PBIDesktop_SSeXiwT4v3" src="https://github.com/user-attachments/assets/c7d409a5-986c-4f76-bd6d-e4c0d0a7fdb0" /></td>
+  </tr>
+</table>
 
 ---
-'''m
+ ```m
 Calculated Columns DAX
 
-Age_group = SWITCH(TRUE(),'public employees'[age]>=45,"45-50",'public employees'[age]>=36,"36-44",'public employees'[age]>=25,"25-35",'public employees'[age]>=18,"18-24")
-'''
+Age_group = SWITCH(TRUE(),'public employees'[age]>=45,"45-50",'public employees'[age]>=36,"36-44",'public employees'[age]
+>=25,"25-35",'public employees'[age]>=18,"18-24")
+
+
+salary_check = SWITCH(TRUE(),'public hr_metrics'[salary_annual_inr]>RELATED('public role'[base_max]),"High_Pay",
+    'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
+    'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")
+ ```
 * **Robust DAX Measures:** Wrote complex DAX measures for core KPIs, Time Intelligence, and conditional logic.
 
 ## 🎛️ 4. Dashboard Interactivity & UI
