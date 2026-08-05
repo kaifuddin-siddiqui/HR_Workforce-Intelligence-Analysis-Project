@@ -49,10 +49,11 @@ The data flows through a structured 3-tier pipeline:
 Data was imported into a relational database environment structured across core entities: `employees`, `hr_metrics`, `department`, and `role`.
 
 ### Key SQL Operations Performed:
+1. **Data Import & Schema Setup:** Created structured SQL tables and successfully imported the raw data files.
 1. **Data Cleaning & Normalization:** Handled missing values, standardized column data types, and validated foreign key constraints.
 2. **CTE & Joins Functions:** Calculated employee tenure, performance rankings and salary percentiles using SQL Common Table Expressions (`WITH` clauses) and `Joins`.
 3. **Attrition Analysis Queries:** Aggregated resignation rates by age group, department, job role and salary bracket to uncover patterns before importing into BI tools.
-
+Data Cleaning & Engineering: Refactored the database schema using ALTER TABLE to add features, backfilled records via UPDATE queries, and applied EXTRACT / DATE_TRUNC functions to derive time-based metrics like Employee Age and Tenure while enforcing FOREIGN KEY constraints
 ---
 
 ## 📊 Phase 2: Power BI Data Modeling & Reporting
