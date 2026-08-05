@@ -1,7 +1,7 @@
 # HR_Workforce-Intelligence-Analysis-Project
 End-to-End Strategic HR Workforce Intelligence Analysis | SQL Server • Power BI • Excel Power Pivot. SQL data cleaning, Star Schema architecture for data modeling, complex DAX measures and 4 Interactive dashboards delivering visibility into headcount, turnover, diversity and workforce performance to drive data-driven decisions.
 
-# HR Analytics & Data Processing Pipeline (SQL)
+#  🐘 HR Analytics & Data Processing Pipeline (SQL)
 
 ## 📌 Project Overview
 This project showcases an end-to-end data processing and analytics pipeline using **SQL (PostgreSQL)**. The goal of this project was to take raw, unorganized HR data, clean it, structure it, and extract meaningful business insights regarding employee retention, salary distribution, and workforce demographics. 
