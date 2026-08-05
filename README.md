@@ -4,8 +4,11 @@ End-to-End Strategic HR Workforce Intelligence Analysis | SQL Server • Power B
 
 # 📊 End-to-End HR Workforce Intelligence & Attrition Analytics
 
-![Dashboard Demo](assets/dashboard_demo.gif)
-*Caption: Live dynamic visual switching using Field Parameters in Power BI.*
+<img width="1920" height="1007" alt="PBIDesktop_KBazToBwQv" src="https://github.com/user-attachments/assets/c3235f7a-f4aa-4949-89cf-02b09ebef7b5" />
+<br>
+<br>
+
+***Caption: Live dynamic visual switching using Field Parameters in Power BI.***
 
 ---
 
@@ -17,7 +20,7 @@ The primary objective is to transform raw employee metrics into actionable strat
 ---
 
 ## 🛠️ Tech Stack & Skills Highlighted
-* **Database Management:** SQL (MySQL / PostgreSQL)
+* **Database Management:** SQL (PostgreSQL)
 * **Data Processing & ETL:** Power Query (M Language), SQL Data Wrangling
 * **Data Modeling:** Star Schema Design, Custom Date Table, Active/Inactive Relationships
 * **Advanced Analytics:** Complex DAX (`USERELATIONSHIP`, Time Intelligence, Field Parameters), SQL joins, CTEs, Aggregations
@@ -47,8 +50,8 @@ Data was imported into a relational database environment structured across core 
 
 ### Key SQL Operations Performed:
 1. **Data Cleaning & Normalization:** Handled missing values, standardized column data types, and validated foreign key constraints.
-2. **CTE & Window Functions:** Calculated employee tenure, performance rankings, and salary percentiles using SQL Common Table Expressions (`WITH` clauses) and `DENSE_RANK()`.
-3. **Attrition Analysis Queries:** Aggregated resignation rates by age group, department, job role, and salary bracket to uncover patterns before importing into BI tools.
+2. **CTE & Joins Functions:** Calculated employee tenure, performance rankings and salary percentiles using SQL Common Table Expressions (`WITH` clauses) and `Joins`.
+3. **Attrition Analysis Queries:** Aggregated resignation rates by age group, department, job role and salary bracket to uncover patterns before importing into BI tools.
 
 ---
 
@@ -60,7 +63,7 @@ Data was imported into a relational database environment structured across core 
 * **Inactive Relationship Management:** Managed complex date dimensions (e.g., *Hire Date* vs. *Termination Date*) using the **`USERELATIONSHIP`** DAX function without breaking model integrity.
 
 ### 2. Advanced DAX & Dynamic Features
-* **Field Parameters:** Built dynamic metric slicers allowing end-users to seamlessly switch entire chart views between **Total Headcount**, **Attrition Count**, **Attrition Rate (%)**, and **Average Tenure**.
+* **Field Parameters:** Built dynamic metric slicers allowing end-users to seamlessly switch entire chart views between **Total Headcount**/**Total Employees**, **Attrition Count**, **Attrition Rate (%)**, and **Average Tenure**.
 * **Key DAX Measures Written:**
   * **Total Attrition:** `COUNTX(FILTER('employees', 'employees'[IsActive] = 0), 'employees'[EmployeeID])`
   * **Attrition Rate %:** `DIVIDE([Total Attrition], [Total Headcount], 0)`
