@@ -20,7 +20,7 @@ The primary objective is to transform raw employee metrics into actionable strat
 * **Database Management:** SQL (MySQL / PostgreSQL)
 * **Data Processing & ETL:** Power Query (M Language), SQL Data Wrangling
 * **Data Modeling:** Star Schema Design, Custom Date Table, Active/Inactive Relationships
-* **Advanced Analytics:** Complex DAX (`USERELATIONSHIP`, Time Intelligence, Field Parameters), SQL Window Functions, CTEs, Aggregations
+* **Advanced Analytics:** Complex DAX (`USERELATIONSHIP`, Time Intelligence, Field Parameters), SQL joins, CTEs, Aggregations
 * **Visualization:** Power BI Desktop, Custom Dynamic Visuals, Field Parameters, Interactive Filtering
 
 ---
