@@ -63,6 +63,12 @@ A highly optimized data model is the backbone of this dashboard.
 </table>
 
 ---
+ ```m
+M Code
+= List.Dates(#date(1975,1,1),18110,#duration(1,0,0,0))
+ ```
+
+---
 <br>
 <img width="960" height="487" alt="pKZBQaGxDd1" src="https://github.com/user-attachments/assets/1360f9f1-afbe-441a-bdf2-56b4edd9d99f" />
 
@@ -194,31 +200,43 @@ Employees_Analysis = SWITCH(SELECTEDVALUE(total_measure[Parameter Order]),0,"Tot
 
 ---
 ## **1)Executive Overview**
-<img width="629" height="364" alt="TjR5gAzUnJ" src="https://github.com/user-attachments/assets/593e642d-1e4e-4f28-a64a-4050b5161985" />
+<img width="684" height="400" alt="PBIDesktop_PPRc6zDuDL" src="https://github.com/user-attachments/assets/d5540774-335f-400e-b13c-b6307b0822b9" />
+
 
 ---
 ## **2)Performance & Productivity**
-<img width="464" height="382" alt="PBIDesktop_OHCWQreN6u" src="https://github.com/user-attachments/assets/51ae616c-799b-46f4-81bd-c4e0f3f4e49a" />
+<img width="500" height="414" alt="ycD2hfavGp" src="https://github.com/user-attachments/assets/ba10dc4c-ee24-48ee-92bf-e387b48b51e7" />
+
 
 ---
 ## **3)Impact Analysis**
-<img width="433" height="362" alt="PBIDesktop_YNCCFaw8Mo" src="https://github.com/user-attachments/assets/e1c93696-ffb3-4a6d-baba-10d49883e935" />
+<img width="474" height="416" alt="ewYzBErPWk" src="https://github.com/user-attachments/assets/d3df5bd1-a301-41ad-9269-b79f6cf58acf" />
+
 
 ---
 ## **4) Data Explorer**
-<img width="596" height="370" alt="PBIDesktop_dJ8n0RRwGj" src="https://github.com/user-attachments/assets/ac07a9fc-ec0b-4729-9963-b8291770575c" />
+<img width="693" height="389" alt="PBIDesktop_tzIvlnvgHE" src="https://github.com/user-attachments/assets/756cba93-3891-48e0-8162-67efa8cccc5c" />
+
 
 ---
 
 ## 💡 5. Business Impact
 This dashboard empowers HR teams and management to:
-1. Instantly identify departments, roles, or age groups with the highest turnover rates.
-2. Analyze the correlation between performance metrics, training hours, and employee retention.
-3. Make proactive, data-driven decisions to improve workforce planning and optimize the business structure.
 
+### **1. Instantly identify departments, roles, or age groups with the highest turnover rates.**
+
+---
+### **2. Analyze the correlation between performance metrics, training hours, and employee retention.**
+
+---
+### **3. Make proactive, data-driven decisions to improve workforce planning and optimize the business structure.**
+
+---
 ## 🛠️ Tech Stack & Skills Highlighted
 * **Tool:** Power BI Desktop
 * **Data Processing:** Power Query (M), ETL
 * **Data Modeling:** Star Schema, Custom Date Tables
 * **Calculations:** Advanced DAX (Time Intelligence, `USERELATIONSHIP`)
 * **Advanced UI Features:** Field Parameters, Dynamic Visual Switching, Custom Slicers
+
+---
