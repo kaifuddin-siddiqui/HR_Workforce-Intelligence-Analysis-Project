@@ -49,20 +49,171 @@ The data flows through a structured 3-tier pipeline:
 Data was imported into a relational database environment structured across core entities: `employees`, `hr_metrics`, `department`, and `role`.
 
 ### Key SQL Operations Performed:
+
 1. **Data Import & Schema Setup:** Created structured SQL tables and successfully imported the raw data files.
-1. **Data Cleaning & Normalization:** Handled missing values, standardized column data types, and validated foreign key constraints.
-2. **CTE & Joins Functions:** Calculated employee tenure, performance rankings and salary percentiles using SQL Common Table Expressions (`WITH` clauses) and `Joins`.
-3. **Attrition Analysis Queries:** Aggregated resignation rates by age group, department, job role and salary bracket to uncover patterns before importing into BI tools.
-Data Cleaning & Engineering: Refactored the database schema using ALTER TABLE to add features, backfilled records via UPDATE queries, and applied EXTRACT / DATE_TRUNC functions to derive time-based metrics like Employee Age and Tenure while enforcing FOREIGN KEY constraints
+<br>
+<br>
+<table>
+  <tr>
+ <td><img width="375" height="297" alt="pgAdmin4_GOm1F6p2HM" src="https://github.com/user-attachments/assets/5f2dca90-784d-4444-b0e1-8fe04caeb9c6" /></td>
+ <td><img width="438" height="337" alt="TI2tLMv5RD" src="https://github.com/user-attachments/assets/2bdc221d-fc17-4b33-991d-ffba850821c0" /></td>
+ <td><img width="745" height="424" alt="pgAdmin4_ceFTo93fgp" src="https://github.com/user-attachments/assets/e83f22e7-6d1a-4c7b-adf2-b410ddc2c6f3" /></td>
+  </tr>
+</table>
+
+ ---
+ 
+3. **Data Cleaning & Engineering:** Refactored the database schema using `ALTER TABLE` to add features, backfilled records via `UPDATE` queries, and applied `EXTRACT /            DATE_TRUNC` functions to derive time-based metrics like `Employee Age` and `Tenure` while enforcing. 
+<br>
+<img width="841" height="363" alt="pgAdmin4_XP7M6g3mSt" src="https://github.com/user-attachments/assets/f646522f-de6c-45cd-9d77-7477b6b1eb72" />
+<br>
+
+ ---
+ 
+**SQL Querys**
+
+ ```m
+
+SQL Querys
+
+--Cleaning_&_alter_data_steps
+---add column age
+
+ alter table employees
+ add column age smallint;
+
+--fill the column age
+---1)using extract only years
+
+UPDATE employees 
+set  age = extract(year from age((select				
+max(attrition_date) from hr_metrics),date_of_birth));
+
+---2)using CTEs with date_trunc for y-m-d
+with
+max_date as (select max(attrition_date)as max_dates from hr_metrics)
+update employees e
+set age = DATE_TRUNC('day',age(m.max_dates,date_of_birth))from max_date m;
+```
+
+ ---
+4. **CTE, Joins & Functions:** Calculated average performance, monthly overtime, and salary percentiles using `SQL Common Table Expressions (WITH clauses)`, `aggregations`, and `JOINs`.
+<br>
+<table>
+  <tr>
+ <td><img width="753" height="247" alt="RC9QaEAp0j" src="https://github.com/user-attachments/assets/5caf21a0-9a0e-4eea-a986-9914e58b984d" /></td>
+ <td><img width="795" height="257" alt="kQeXXF4ODi" src="https://github.com/user-attachments/assets/38622992-afd1-459f-9c26-0b1cb3b039bc" /></td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr>
+ <td><img width="699" height="255" alt="pgAdmin4_pW2SRipYIz" src="https://github.com/user-attachments/assets/cfdf1eae-a921-4d07-afb6-4d9429685ae0" /></td>
+ <td><img width="733" height="365" alt="pgAdmin4_uhZh0zwC10" src="https://github.com/user-attachments/assets/14eee878-014b-48f4-b2be-38e104941c2e" /></td>
+  </tr>
+</table>
+<br>
+<br>
+
+ ---
+ 
+ ```m
+SQL Querys
+---i)total_data_by department
+
+with
+employee_count  as
+(select dept_id, count(employee_id)as employees from employees 
+group by dept_id )
+select d.dept_id,d.dept_name,d.dept_head,e.employees,sum(attrition_check)as attrition,
+(e.employees-sum(attrition_check)) as working_employees,
+((sum(attrition_check)::numeric/e.employees::numeric)*100)::int::text||'%' as attrition_percentage,
+avg(h.performance)::decimal(10,2)as avg_performance,avg(h.training_count)::decimal(10,2)as avg_total_training_attends,
+avg(h.training_hours)::decimal(10,2)as avg_total_training_hours,avg(h.job_satisfaction)::decimal(10,2)
+as avg_job_satisfaction_ratings,avg(h.work_life_balance)::decimal(10,2)as avg_work_life_balance_ratings,
+avg(h.overtime_hours_monthly)::decimal(10,2)as avg_overtimes_hours_monthly
+from department d left join
+hr_metrics h on d.dept_id = h.dept_id
+left join employee_count e on d.dept_id = e.dept_id
+group by d.dept_id,d.dept_name,d.dept_head,e.employees
+order by d.dept_id;
+ ```
+
+ ---
+6. **Attrition Analysis Queries:** Aggregated resignation rates by age group, department, job role and salary bracket to uncover patterns before importing into BI tools.
+
+<br>
+<table>
+  <tr>
+ <td><img width="569" height="377" alt="pgAdmin4_RPlxCUbTaO" src="https://github.com/user-attachments/assets/034dc68d-223d-430b-a244-a4a9911d5015" /></td>
+ <td><img width="761" height="345" alt="KK7mWSYktF" src="https://github.com/user-attachments/assets/37ce46c1-31db-4d37-b57d-8b1f9c174006" /></td>
+ </tr>
+</table>
+<br>
+
+ ```m
+SQL Querys
+--i)count of employees by age
+
+select e.age,count(e.employee_id)as total_employees,
+sum(h.attrition_check)as attrition_count, count(e.employee_id)-sum(attrition_check)
+as total_working_employees,cast(sum(h.attrition_check)::numeric/count(e.employee_id)::numeric*100 as decimal(10,2))||'%'
+as attrition_percentage from employees e left join hr_metrics h on
+e.employee_id=h.employee_id
+group by e.age;
+
+--ii)count of employees by roles
+
+with 
+employees as
+(select r.role_id,r.role_name,r.band,count(e.employee_id)as employees from role r left join
+employees e on r.role_id=e.role_id group by r.role_id),
+attrition as
+(select r.role_id,sum(h.attrition_check)as attrition from role r
+left join hr_metrics h on r.role_id=h.role_id group by r.role_id)
+select e.role_id,e.role_name,e.band,e.employees,a.attrition,
+e.employees-a.attrition as total_working_employees,(a.attrition::numeric/e.employees::numeric
+*100)::decimal(10,2)||'%'as attrition_percentage from employees e
+left join attrition a on e.role_id=a.role_id order by e.role_id;
+ ```
+
 ---
 
 ## 📊 Phase 2: Power BI Data Modeling & Reporting
 
 ### 1. Data Modeling (Star Schema)
 * Structured the dataset using **Star Schema methodology** with a central Fact Table (`hr_metrics`) connected to Dimension Tables (`employees`, `department`, `role`, and `DimDate`).
-* Built a dedicated **Custom Date Table (`DimDate`)** using DAX to support advanced Time Intelligence calculations (YoY Growth, MTD, YTD).
-* **Inactive Relationship Management:** Managed complex date dimensions (e.g., *Hire Date* vs. *Termination Date*) using the **`USERELATIONSHIP`** DAX function without breaking model integrity.
+<br>
+<br>
+<img width="960" height="469" alt="PBIDesktop_pTAaHGX4qH" src="https://github.com/user-attachments/assets/abd1f651-8a84-4fbe-b06f-5726aa1775f6" />
+<br>
 
+---
+  
+* Built a dedicated **Custom Date Table (`DimDate`)** using DAX to support advanced Time Intelligence calculations (YoY Growth, MTD, YTD).
+<br>
+<br>
+<table>
+  <tr>
+ <td><img width="960" height="509" alt="PBIDesktop_Mf9ihhuYmA" src="https://github.com/user-attachments/assets/35cd456a-083b-4d79-9215-9f25d60f13b9" /></td>
+ <td><img width="960" height="511" alt="SOqhAcjJhW" src="https://github.com/user-attachments/assets/30531736-7fb8-426c-9d1d-86912f732777" /></td>
+ <td><img width="960" height="487" alt="pKZBQaGxDd1" src="https://github.com/user-attachments/assets/1360f9f1-afbe-441a-bdf2-56b4edd9d99f" /></td>
+  </tr>
+</table>
+  ---
+ ```m
+M Code
+= List.Dates(#date(1975,1,1),18110,#duration(1,0,0,0))
+ ```
+
+ ---
+* **Inactive Relationship Management:** Managed complex date dimensions (e.g., *Hire Date* vs. *Termination Date*) using the **`USERELATIONSHIP`** DAX function without breaking model integrity.
+  <br>
+  <br>
+  <img width="960" height="483" alt="zXCAqCdYBy" src="https://github.com/user-attachments/assets/2f359a9a-1b16-46f7-901c-34b8c3cbd1ff" />
+
+ ---
+ 
 ### 2. Advanced DAX & Dynamic Features
 * **Field Parameters:** Built dynamic metric slicers allowing end-users to seamlessly switch entire chart views between **Total Headcount**/**Total Employees**, **Attrition Count**, **Attrition Rate (%)**, and **Average Tenure**.
 * **Key DAX Measures Written:**
