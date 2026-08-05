@@ -128,12 +128,87 @@ salary_check = SWITCH(TRUE(),'public hr_metrics'[salary_annual_inr]>RELATED('pub
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")
  ```
+---
+<br>
+
 * **Robust DAX Measures:** Wrote complex DAX measures for core KPIs, Time Intelligence, and conditional logic.
+<br>
+<br><table>
+  <tr>
+ <td><img width="353" height="311" alt="PBIDesktop_0PdYGnXTiM" src="https://github.com/user-attachments/assets/f6fc9a36-597e-4c51-9968-fd908a1991b2" /></td>
+ <td><img width="343" height="289" alt="PBIDesktop_3GF7SSDkMl" src="https://github.com/user-attachments/assets/640f3177-db74-4227-9643-af6a3b8e675b" /></td>
+  </tr>
+</table>
+
+---
+
+<img width="960" height="100" alt="xeVPBOu9YH" src="https://github.com/user-attachments/assets/54723132-90f4-47eb-a53c-676026037cd2" />
+
+---
+<table>
+  <tr>
+ <td><img width="960" height="477" alt="PBIDesktop_weWAsdJOTY" src="https://github.com/user-attachments/assets/e3e15a6e-ddb9-48c8-bbc2-9eb1da65aed3" /></td>
+<td><img width="960" height="540" alt="PBIDesktop_YHsjOGAj04" src="https://github.com/user-attachments/assets/f6c663d7-b2d0-427f-9dec-b160ef04388b" /></td></tr>
+</table>
+
+---
+<img width="960" height="491" alt="WKPCiTS4iS" src="https://github.com/user-attachments/assets/21f2f97f-d86c-43c6-8d96-999d8c7a7781" />
+
+---
+ ```m
+DAX
+  AVRAGE TOTAL PERFORMANCE
+
+avg Total performance by para = VAR svalue =SELECTEDVALUE(total_measure[Parameter Order])
+VAR yes = CALCULATE(AVERAGE('public hr_metrics'[performance]),'public hr_metrics'[attrition]="YES")
+VAR no = CALCULATE(AVERAGE('public hr_metrics'[performance]),'public hr_metrics'[attrition]="NO")
+RETURN
+SWITCH(svalue,2,no,1,yes,0,CALCULATE(AVERAGE('public hr_metrics'[performance])))
+ ```
+ ```m
+DAX
+attrition last year = CALCULATE([Total_attrition],PARALLELPERIOD('date table'[date],-1,YEAR))
+
+Total_attrition_% = DIVIDE([Total_attrition],[Total_employees],0)
+
+Employees_Analysis = SWITCH(SELECTEDVALUE(total_measure[Parameter Order]),0,"Total_employees_analysis",1,"Total_attrition_employees_analysis",2,"Total_active_employees analysis")
+ ```
 
 ## 🎛️ 4. Dashboard Interactivity & UI
-The dashboard is designed with a clean, corporate-level UI to offer a seamless experience:
-* **Comprehensive Slicers:** Users can deeply filter the data using multiple slicers, including Age, Department, Salary Band, and Job Role.
-* **Multi-Page Layout:** The report is logically divided into distinct sections (Executive Overview, Performance & Productivity, Impact Analysis) to guide the data narrative.
+**The dashboard is designed with a clean, corporate-level UI to offer a seamless experience**:
+
+* **Comprehensive Slicers:** Users can deeply filter the data using multiple slicers, including Age, Department, Band and Job Role.
+
+---
+<table>
+  <tr>
+ <td><img width="433" height="362" alt="PBIDesktop_YNCCFaw8Mo1" src="https://github.com/user-attachments/assets/7d83a644-b6b6-49db-ace4-5b09e47a58e2" /></td>
+<td><img width="596" height="370" alt="PBIDesktop_dJ8n0RRwGj1" src="https://github.com/user-attachments/assets/b04abe97-fe7b-4a4c-9760-27a0c18ab5d5" /></td>
+  </tr>
+</table>
+
+---
+<br>
+
+* **Multi-Page Layout:** The report is logically divided into distinct sections (Executive Overview, Performance & Productivity, Impact Analysis, Data Explorer) to guide the data narrative.
+
+---
+## **1)Executive Overview**
+<img width="629" height="364" alt="TjR5gAzUnJ" src="https://github.com/user-attachments/assets/593e642d-1e4e-4f28-a64a-4050b5161985" />
+
+---
+## **2)Performance & Productivity**
+<img width="464" height="382" alt="PBIDesktop_OHCWQreN6u" src="https://github.com/user-attachments/assets/51ae616c-799b-46f4-81bd-c4e0f3f4e49a" />
+
+---
+## **3)Impact Analysis**
+<img width="433" height="362" alt="PBIDesktop_YNCCFaw8Mo" src="https://github.com/user-attachments/assets/e1c93696-ffb3-4a6d-baba-10d49883e935" />
+
+---
+## **4) Data Explorer**
+<img width="596" height="370" alt="PBIDesktop_dJ8n0RRwGj" src="https://github.com/user-attachments/assets/ac07a9fc-ec0b-4729-9963-b8291770575c" />
+
+---
 
 ## 💡 5. Business Impact
 This dashboard empowers HR teams and management to:
