@@ -299,9 +299,9 @@ Why is this project useful for a business?
 ## 🤖 The Dataset (AI Synthetic Data Generation)
 To ensure data privacy and to practice working with complex, messy datasets, I used AI to generate a synthetic HR database. 
 
-The raw data intentionally contained mismatches, missing values, and unstandardized formats to simulate real-world data challenges. The database consists of four interconnected tables:
+The raw data contained mismatches and unstandardized formats to real-world data challenges. The database consists of four interconnected tables:
 *   **`employees`**: Contains personal details (ID, Name, Gender, Date of Birth, Hire Date).
 *   **`department`**: Contains department details (Dept ID, Name, Location, Dept Head).
 *   **`role`**: Contains job titles, role bands, and minimum/maximum salary brackets.
 *   **`hr_metrics`**: Contains performance scores, attrition status, work-life balance ratings, and current salaries.
-*Feel free to explore the SQL scripts in this repository to see the step-by-step logic used for cleaning and analysis.*
+*Feel to explore the SQL scripts in this repository to see the step-by-step logic used for cleaning and analysis.*
