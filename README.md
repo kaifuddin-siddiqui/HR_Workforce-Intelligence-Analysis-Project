@@ -185,11 +185,15 @@ e.employees-a.attrition as total_working_employees,(a.attrition::numeric/e.emplo
 *100)::decimal(10,2)||'%'as attrition_percentage from employees e
 left join attrition a on e.role_id=a.role_id order by e.role_id;
  ```
-
+ <br>
+   <br>
+ 
 * 🔗 **For full SQL query code & details:**
  <br>
  
   👉 **[Click here to view SQL Analysis README](<./SQL_Enterprise Financial & Profitability Analysis FILE/README.md>)**
+ <br>
+   <br>
 
 ---
 
@@ -254,6 +258,8 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")`
 
+   <br>
+    <br>
 
 * 🔗 **For full Power BI dashboard layout & DAX measures:**
    <br>
@@ -261,7 +267,9 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
     <br>
     
   👉 **[Click here to view Power BI README](<./POWER BI Enterprise Financial & Profitability Analysis Dashboard/README.md>)**
-
+ <br>
+   <br>
+ 
 ---
 ## Excel Power Pivot Report:
 
