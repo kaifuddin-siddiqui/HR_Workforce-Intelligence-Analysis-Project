@@ -63,7 +63,7 @@ Data was imported into a relational database environment structured across core 
 
  ---
  
-3. **Data Cleaning & Engineering:** Refactored the database schema using `ALTER TABLE` to add features, backfilled records via `UPDATE` queries, and applied `EXTRACT /            DATE_TRUNC` functions to derive time-based metrics like `Employee Age` and `Tenure` while enforcing. 
+3. **Data Cleaning & Engineering:** Refactored the database schema using `ALTER TABLE` to add features, backfilled records via `UPDATE` queries, and applied `EXTRACT`/`DATE_TRUNC` functions to derive time-based metrics like `Employee Age` and `Tenure` while enforcing. 
 <br>
 <img width="841" height="363" alt="pgAdmin4_XP7M6g3mSt" src="https://github.com/user-attachments/assets/f646522f-de6c-45cd-9d77-7477b6b1eb72" />
 <br>
@@ -200,7 +200,9 @@ left join attrition a on e.role_id=a.role_id order by e.role_id;
  <td><img width="960" height="487" alt="pKZBQaGxDd1" src="https://github.com/user-attachments/assets/1360f9f1-afbe-441a-bdf2-56b4edd9d99f" /></td>
   </tr>
 </table>
+
   ---
+  
  ```m
 M Code
 = List.Dates(#date(1975,1,1),18110,#duration(1,0,0,0))
@@ -215,33 +217,53 @@ M Code
  ---
  
 ### 2. Advanced DAX & Dynamic Features
-* **Field Parameters:** Built dynamic metric slicers allowing end-users to seamlessly switch entire chart views between **Total Headcount**/**Total Employees**, **Attrition Count**, **Attrition Rate (%)**, and **Average Tenure**.
+* **Field Parameters:** Built dynamic metric slicers allowing end-users to seamlessly switch entire chart views between **Total Headcount**/**Total Employees**, **Attrition Count** and **Total Active Employees**.
+
+ ---
+<img width="960" height="292" alt="fluiUCoZ6G" src="https://github.com/user-attachments/assets/68efe989-a07b-425e-b6a8-e8ca07569c5c" />
+<img width="703" height="205" alt="PBIDesktop_e6l0wLkULD" src="https://github.com/user-attachments/assets/ac99c71e-55cc-4387-ae3f-98bdd767cdef" />
+
+ ---
 * **Key DAX Measures Written:**
-  * **Total Attrition:** `COUNTX(FILTER('employees', 'employees'[IsActive] = 0), 'employees'[EmployeeID])`
-  * **Attrition Rate %:** `DIVIDE([Total Attrition], [Total Headcount], 0)`
-  * **Dynamic Date Metric:** `CALCULATE([Total Attrition], USERELATIONSHIP('DimDate'[Date], 'employees'[TerminationDate]))`
+  * **Total Attrition:** `CALCULATE(COUNT('public hr_metrics'[attrition]),('public hr_metrics'[attrition]="yes"))`/`SUM('public hr_metrics'[attrition_check])`
+  * **Attrition Rate %:** `Total_attrition_% = DIVIDE([Total_attrition],[Total_employees],0)`
+ 
+  * **average over_time_ by parameter:** `VAR svalue = SELECTEDVALUE(total_measure[Parameter Order])
+    VAR attrition = CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly]),'public hr_metrics'[attrition]="YES")
+    VAR active = CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly]),'public hr_metrics'[attrition]="NO")
+RETURN
+SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),1,attrition,2,active)`
+
+  * **Calculated Columns Measures:**
+  * **Age_group:** `SWITCH(TRUE(),'public employees'[age]>=45,"45-50",'public employees'[age]>=36,"36-44",'public employees'[age]>=25,"25-35",'public employees'[age]>=18,"18-24")`
+  * **salary_check:** `SWITCH(TRUE(),'public hr_metrics'[salary_annual_inr]>RELATED('public role'[base_max]),"High_Pay",
+    'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
+    'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")`
 
 ---
 
-## 💡 Key Business Insights
-1. **Attrition Hotspots:** Departments with higher overtime hours and lower salary bands showed a **24% higher attrition rate** compared to company average.
-2. **Tenure Critical Zone:** The highest risk of resignation occurs between **12 to 18 months of employment**, suggesting a need for better onboarding and mid-tenure engagement.
-3. **Performance vs. Compensation:** High-performing employees in specific mid-tier roles faced salary compression, directly correlating with exit surveys.
+## 💡 Business Impact & Benefits
+1. Instantly identify departments, roles, or age groups with the highest turnover rates.
+2. Analyze the correlation between performance metrics, training hours, and employee retention.
+3. Improves Retention: By identifying the root causes of attrition (e.g., low salary, poor work-life balance), HR can take proactive steps to retain top talent.
+4. Make proactive, data-driven decisions to improve workforce planning and optimize the business structure.
 
 ---
-
 ## 📁 Repository Structure
 ```text
-├── Data/
-│   ├── raw_hr_data.csv
-│   └── database_schema.sql
-├── SQL_Queries/
+├── HR_Workforce-Intelligence-Analysis-Project/
+│  
+├── POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard/
 │   ├── 01_schema_setup.sql
 │   ├── 02_data_cleaning.sql
 │   └── 03_hr_attrition_analysis.sql
-├── Power_BI/
-│   ├── HR_Workforce_Intelligence.pbix
-│   └── DAX_Measures_Documentation.md
+├── SQL_HR_Workforce_Intelligence_Analysis_Files/
+│   ├── HR_Workforce_Intelligence_Analysis.sql
+│   └──HR_metrics.csv
+│   └──README.md
+│   └──department.csv
+│   └──employees.csv
+│   └──role.csv
 ├── Assets/
 │   ├── dashboard_overview.png
 │   ├── data_model_star_schema.png
