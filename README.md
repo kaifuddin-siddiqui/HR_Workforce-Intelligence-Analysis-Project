@@ -11,7 +11,16 @@ End-to-End Strategic HR Workforce Intelligence Analysis | SQL Server • Power B
 ***Caption: Live dynamic visual switching using Field Parameters in Power BI.***
 
 ---
+## 🤖 The Dataset (AI Synthetic Data Generation)
+To ensure data privacy and to practice working with complex, messy datasets, I used AI to generate a synthetic HR database. 
 
+The raw data contained mismatches and unstandardized formats to real-world data challenges. The database consists of four interconnected tables:
+*   **`employees`**: Contains personal details (ID, Name, Gender, Date of Birth, Hire Date).
+*   **`department`**: Contains department details (Dept ID, Name, Location, Dept Head).
+*   **`role`**: Contains job titles, role bands, and minimum/maximum salary brackets.
+*   **`hr_metrics`**: Contains performance scores, attrition status, work-life balance ratings, and current salaries.
+
+---
 ## 📌 Project Overview
 This project is a comprehensive **End-to-End Business Intelligence & Data Analytics Solution** that combines **SQL** for backend database management/querying and **Power BI** for interactive data visualization and reporting.
 
@@ -177,6 +186,11 @@ e.employees-a.attrition as total_working_employees,(a.attrition::numeric/e.emplo
 left join attrition a on e.role_id=a.role_id order by e.role_id;
  ```
 
+* 🔗 **For full SQL query code & details:**
+ <br>
+ 
+  👉 **[Click here to view SQL Analysis README](<./SQL_Enterprise Financial & Profitability Analysis FILE/README.md>)**
+
 ---
 
 ## 📊 Phase 2: Power BI Data Modeling & Reporting
@@ -240,8 +254,25 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")`
 
----
 
+* 🔗 **For full Power BI dashboard layout & DAX measures:**
+   <br>
+   <br>
+    <br>
+    
+  👉 **[Click here to view Power BI README](<./POWER BI Enterprise Financial & Profitability Analysis Dashboard/README.md>)**
+
+---
+## Excel Power Pivot Report:
+
+Created an Pivot report using Power Pivot to build data relationships.
+
+<img width="747" height="199" alt="EXCEL_Egkro7NM18" src="https://github.com/user-attachments/assets/4573b765-4048-476c-a827-5e4538c042de" />
+<img width="751" height="288" alt="mJKVDRE4U8" src="https://github.com/user-attachments/assets/0bccccf4-5ae8-4926-a6ce-300ebc24697f" />
+
+Simplifies complex data into clear report for quick and  decision-making.
+
+---
 ## 💡 Business Impact & Benefits
 1. Instantly identify departments, roles, or age groups with the highest turnover rates.
 2. Analyze the correlation between performance metrics, training hours, and employee retention.
@@ -254,27 +285,25 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
 ├── HR_Workforce-Intelligence-Analysis-Project/
 │  
 ├── POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard/
-│   ├── 01_schema_setup.sql
-│   ├── 02_data_cleaning.sql
-│   └── 03_hr_attrition_analysis.sql
+│ 
+│   ├──HR_Workforce Intelligence Analysis.pbix
+│    └──README.md
+│ 
 ├── SQL_HR_Workforce_Intelligence_Analysis_Files/
+│ 
 │   ├── HR_Workforce_Intelligence_Analysis.sql
 │   └──HR_metrics.csv
 │   └──README.md
 │   └──department.csv
 │   └──employees.csv
 │   └──role.csv
-├── Assets/
-│   ├── dashboard_overview.png
-│   ├── data_model_star_schema.png
-│   └── dashboard_demo.gif
-└── README.md
+├──README.md
+
 ```
 
 ---
 
 ## 🚀 How to Run / Reproduce This Project
-1. **Database Setup:** Run the SQL scripts in the `/SQL_Queries` folder to create tables and generate analytical views.
-2. **Open Power BI File:** Open `HR_Workforce_Intelligence.pbix` in Power BI Desktop.
-3. **Data Source Connection:** Update the database connection credentials in Power Query if connecting to a live SQL database, or point to the local CSV files in `/Data`.
-4. **Interact:** Use the slicers on the left sidebar and Field Parameter controls to explore metrics dynamically.
+1. **Database Setup:** Run the `HR_Workforce_Intelligence_Analysis.sql` scripts of the`SQL_HR_Workforce_Intelligence_Analysis_Files` folder to create tables and generate analytical views.
+2. **Open Power BI File:** Open `POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard` in Power BI Desktop.
+3. **Interact:** Use the slicers on the sidebar and Field Parameter controls to explore metrics & vishuals dynamically.
