@@ -240,3 +240,6 @@ This dashboard empowers HR teams and management to:
 * **Advanced UI Features:** Field Parameters, Dynamic Visual Switching, Custom Slicers
 
 ---
+👉 **[Click here to view main README](<../README.md>)**
+
+---
