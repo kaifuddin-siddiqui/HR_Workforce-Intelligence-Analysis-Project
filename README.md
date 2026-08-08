@@ -191,7 +191,7 @@ left join attrition a on e.role_id=a.role_id order by e.role_id;
 * 🔗 **For full SQL query code & details:**
  <br>
  
-  👉 **[Click here to view SQL Analysis README](<./SQL_Enterprise Financial & Profitability Analysis FILE/README.md>)**
+  👉 **[Click here to view SQL Analysis README](<./SQL_HR_Workforce_Intelligence_Analysis_Files/README.md>)**
  <br>
    <br>
 
@@ -266,7 +266,7 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
    <br>
     <br>
     
-  👉 **[Click here to view Power BI README](<./POWER BI Enterprise Financial & Profitability Analysis Dashboard/README.md>)**
+  👉 **[Click here to view Power BI README](<./POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard/README.md>)**
  <br>
    <br>
  
