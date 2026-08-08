@@ -305,3 +305,6 @@ The raw data contained mismatches and unstandardized formats to real-world data 
 *   **`role`**: Contains job titles, role bands, and minimum/maximum salary brackets.
 *   **`hr_metrics`**: Contains performance scores, attrition status, work-life balance ratings, and current salaries.
 *Feel to explore the SQL scripts in this repository to see the step-by-step logic used for cleaning and analysis.*
+
+---
+👉 **[Click here to view main README](<../README.md>)**
