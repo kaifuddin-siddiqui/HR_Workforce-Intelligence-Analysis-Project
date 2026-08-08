@@ -187,14 +187,17 @@ left join attrition a on e.role_id=a.role_id order by e.role_id;
  ```
  <br>
    <br>
- 
+   
+ ---
 * 🔗 **For full SQL query code & details:**
  <br>
- 
+  <br>
+  
   👉 **[Click here to view SQL Analysis README](<./SQL_HR_Workforce_Intelligence_Analysis_Files/README.md>)**
  <br>
    <br>
-
+ <br>
+ 
 ---
 
 ## 📊 Phase 2: Power BI Data Modeling & Reporting
@@ -258,9 +261,11 @@ SWITCH(svalue,0,CALCULATE(AVERAGE('public hr_metrics'[overtime_hours_monthly])),
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_max]),"In_Range",
     'public hr_metrics'[salary_annual_inr]<=RELATED('public role'[base_min]),"Under_Pay")`
 
+ ---
    <br>
     <br>
 
+ ---
 * 🔗 **For full Power BI dashboard layout & DAX measures:**
    <br>
    <br>
