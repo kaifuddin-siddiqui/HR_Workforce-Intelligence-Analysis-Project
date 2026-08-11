@@ -21,6 +21,9 @@ The raw data contained mismatches and unstandardized formats to real-world data 
 *   **`hr_metrics`**: Contains performance scores, attrition status, work-life balance ratings, and current salaries.
 
 ---
+ 👉 **[Click here to download HR_workforce raw dataset files ](<./HR_workforce raw dataset>)**
+ 
+---
 ## 📌 Project Overview
 This project is a comprehensive **End-to-End Business Intelligence & Data Analytics Solution** that combines **SQL** for backend database management/querying and **Power BI** for interactive data visualization and reporting.
 
@@ -297,7 +300,9 @@ Simplifies complex data into clear report for quick and  decision-making.
 ## 📁 Repository Structure
 ```text
 ├── HR_Workforce-Intelligence-Analysis-Project/
-│  
+│
+├── HR_workforce raw dataset/
+│ 
 ├── POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard/
 │ 
 │   ├──HR_Workforce Intelligence Analysis.pbix
