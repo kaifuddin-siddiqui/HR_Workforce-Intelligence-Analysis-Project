@@ -53,6 +53,7 @@ The data flows through a structured 3-tier pipeline:
 ```
 
 ---
+You can click on the links below to view full details for each tool:
 
 ## 🗄️ Phase 1: SQL Data Engineering & Analysis
 Data was imported into a relational database environment structured across core entities: `employees`, `hr_metrics`, `department`, and `role`.
@@ -300,17 +301,17 @@ Simplifies complex data into clear report for quick and  decision-making.
 ├── POWER_BI_HR_Workforce_Intelligence_Analysis_Dashboard/
 │ 
 │   ├──HR_Workforce Intelligence Analysis.pbix
-│    └──README.md
+│    └──README.md                                         <-- Power BI Sub-README
 │ 
 ├── SQL_HR_Workforce_Intelligence_Analysis_Files/
 │ 
 │   ├── HR_Workforce_Intelligence_Analysis.sql
-│   └──HR_metrics.csv
-│   └──README.md
+│   └──HR_metrics.csv                                 <-- Csv files(Synthetic Data)
+│   └──README.md                                   <-- SQL Sub-README
 │   └──department.csv
 │   └──employees.csv
 │   └──role.csv
-├──README.md
+├──README.md                                <-- Main Repository README (This File)  
 
 ```
 
