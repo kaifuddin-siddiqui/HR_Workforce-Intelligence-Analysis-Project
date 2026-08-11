@@ -1,0 +1,21 @@
+role_id,role_name,band,base_min,base_max
+R01,Junior Software Engineer,E1,350000,600000
+R02,Software Engineer,E2,650000,1050000
+R03,Senior Software Engineer,E3,1100000,1800000
+R04,Lead Engineer,E4,1700000,2600000
+R05,Engineering Manager,M1,2500000,4000000
+R06,Data Analyst,E2,600000,1000000
+R07,Senior Data Analyst,E3,1050000,1650000
+R08,Data Scientist,E3,1200000,2000000
+R09,Sales Executive,E1,300000,550000
+R10,Senior Sales Executive,E2,550000,900000
+R11,Sales Manager,M1,1500000,2800000
+R12,Marketing Associate,E1,350000,600000
+R13,Marketing Manager,E3,1000000,1700000
+R14,HR Executive,E1,320000,550000
+R15,HR Manager,M1,1200000,2200000
+R16,Finance Analyst,E2,650000,1100000
+R17,Operations Executive,E1,300000,550000
+R18,IT Support Engineer,E2,500000,850000
+R19,Product Manager,E4,1800000,2700000
+R20,R&D Scientist,E4,1600000,2500000
